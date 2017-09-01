@@ -1,0 +1,22 @@
+<?php $__env->startSection('htmlheader_title'); ?>
+Home
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('main-content'); ?>
+<h1><?php echo e($user->name); ?></h1>
+<p class="lead"><?php echo e($user->email); ?></p>
+<p class="lead"><?php echo e($user->phone); ?></p>
+<hr>
+
+<a href="<?php echo e(route('user.index')); ?>" class="btn btn-info">Back</a>
+<a href="<?php echo e(route('user.edit', $user->id)); ?>" class="btn btn-primary">Edit</a>
+<?php echo Form::open(['method' => 'DELETE','route' => ['user.destroy', $user->id], 'style' =>'display: inline;']); ?>
+
+    <?php echo Form::submit('Delete', ['class' => 'btn btn-danger']); ?>
+
+<?php echo Form::close(); ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

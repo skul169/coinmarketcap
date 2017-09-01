@@ -1,0 +1,73 @@
+<?php $__env->startSection('htmlheader_title'); ?>
+Role
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('main-content'); ?>
+
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">Update Role: <strong><?php echo e($model->name); ?></strong></h3>
+    </div><!-- /.box-header -->
+    <!-- form start -->
+
+    <?php if(session('status')): ?>
+    <div class="alert alert-success">
+        <?php echo e(session()->get('status')); ?>
+
+    </div>
+    <?php endif; ?>
+
+    <!-- form start -->
+    <?php echo Form::open(array('route' => ['role.update', $model->id], 'method' => 'PUT', 'files'=>true)); ?>
+
+    <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
+    <div class="box-body">
+
+
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Name<span
+                    class="lable_red">*</span></label>
+            <div class="col-sm-10">
+                <?php echo Form::text('name',$model->name,['class'=>'form-control','placeholder'=>'Enter Name','maxlength'=>'350']); ?>
+
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Description<span
+                    class="lable_red">*</span></label>
+            <div class="col-sm-10">
+                <?php echo Form::text('description',$model->description, array('class'=>'form-control', 'id' => 'description',
+                'placeholder'=>'Enter Description', 'value'=>Input::old('description'))); ?>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <?php foreach($permissions as $permission): ?>
+            <div class="col-sm-3">
+                <?php echo Form::checkbox('permissions[]', $permission->id, $model->perms()->where('id',$permission->id)->count() > 0);; ?> <?php echo e($permission->name); ?>
+
+            </div>
+            <?php endforeach; ?>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+            <div class="form-group" align="center">
+                <?php echo Form::hidden('id',$model->id,['class'=>'form-control']); ?>
+
+                <?php echo Form::submit('Update Role',['class' => 'addBTCSubmitBtn']); ?>
+
+            </div>
+        </div>
+        <!-- /.box-footer -->
+    </div>
+    <?php echo Form::close(); ?>
+
+
+</div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

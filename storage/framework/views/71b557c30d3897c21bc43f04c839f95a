@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+    <?php echo $__env->make('partials.htmlheader', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+    <body class="skin-green sidebar-mini">
+        <div class="wrapper">
+
+            <?php echo $__env->make('partials.mainheader', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+            <?php echo $__env->make('partials.sidebar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+
+                <?php echo $__env->make('partials.contentheader', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+                <!-- Main content -->
+                <section class="content">
+                    <!-- Your Page Content Here -->
+                    <?php echo $__env->yieldContent('main-content'); ?>
+                </section><!-- /.content -->
+            </div><!-- /.content-wrapper -->
+
+            <?php echo $__env->make('partials.controlsidebar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+            <?php echo $__env->make('partials.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+        </div><!-- ./wrapper -->
+
+        <?php echo $__env->make('partials.scripts', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+        <?php echo $__env->yieldContent('inpage-script'); ?>
+    </body>
+</html>

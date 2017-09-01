@@ -1,0 +1,286 @@
+<?php $__env->startSection('htmlheader_title'); ?>
+Home
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('main-content'); ?>
+<div class="box">
+    <div class="box-header">
+        <h3 class="box-title">Quản lý nhận hưởng</h3>
+    </div><!-- /.box-header -->
+    <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+            <li class="active"><a href="#gioithieu" data-toggle="tab">Thưởng giới thiệu</a></li>
+            <li class=""><a href="#guilai" data-toggle="tab">thưởng lưu trữ</a></li>
+            <li class=""><a href="#guilaigioithieu" data-toggle="tab">thưởng lưu trữ giới thiệu</a></li>
+            <li class=""><a href="#tructieptrader" data-toggle="tab">Thường trực tiếp Trader</a></li>
+            <li class=""><a href="#levertrader" data-toggle="tab">Thưởng Lever trader</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="gioithieu">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="table_investhistory" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting" tabindex="0" rowspan="1" colspan="1">Mã</th>
+                                    <th class="sorting" tabindex="0" rowspan="1" colspan="1">Nhận thưởng</th>
+                                    <th class="sorting" tabindex="0" rowspan="1" colspan="1">Người nhận</th>
+                                    <th class="sorting" tabindex="0" rowspan="1" colspan="1">Nhận từ</th>
+                                    <th class="sorting" tabindex="0" rowspan="1" colspan="1">Ngày nhận</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <?php foreach($refers as $refer): ?>
+                                <tr role="row" class="odd">
+                                    <td>#<?php echo e($refer->id); ?></td>
+                                    <td><span class="btn-xs btn btn-danger"><?php echo e($refer->value); ?></span></td>
+                                    <td>
+                                        <?php if($refer->receiver): ?>
+                                        <?php echo e($refer->receiver->username); ?>
+
+                                        <?php endif; ?>
+
+                                    </td>
+                                    <td>
+                                        <?php if($refer->sender): ?>
+                                        <?php echo e($refer->sender->username); ?>
+
+                                        <?php endif; ?>
+                                    </td>
+                                    <td>
+                                      <?php echo e($refer->created_at); ?>
+
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+                            <tfoot>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Tổng số nhận thưởng: <?php echo e($refers->total()); ?></div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
+                            <?php echo $refers->setPath('')->appends(['listall' => old('listall')])->render(); ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!----  lưu trữ---->
+
+            <div class="tab-pane" id="guilai">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="table_investhistory" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                            <thead>
+                            <tr role="row">
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1">Mã</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1">Nhận thưởng</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1">Người nhận</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1">Ngày nhận</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php foreach($rosedeposits as $rose): ?>
+                                <tr role="row" class="odd">
+                                    <td>#<?php echo e($rose->id); ?></td>
+                                    <td><span class="btn-xs btn btn-danger"><?php echo e($rose->value); ?></span></td>
+                                    <td>
+                                        <?php echo e($rose->receiver->username); ?>
+
+                                    </td>
+                                    <td>
+                                        <?php echo e($rose->created_at); ?>
+
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+                            <tfoot>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Tổng số nhận thưởng: <?php echo e($rosedeposits->total()); ?></div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
+                    <?php echo $rosedeposits->setPath('')->appends(['listall' => old('listall')])->render(); ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----  lưu trữ giới thiệu---->
+
+            <div class="tab-pane" id="guilaigioithieu">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="table_investhistory" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                            <thead>
+                            <tr role="row">
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1">Mã</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1">Nhận thưởng</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1">Người nhận</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1">Người giới thiệu</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1">Ngày nhận</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php foreach($referdeposits as $rose): ?>
+                                <tr role="row" class="odd">
+                                    <td>#<?php echo e($rose->id); ?></td>
+                                    <td><span class="btn-xs btn btn-danger"><?php echo e($rose->value); ?></span></td>
+                                    <td>
+                                        <?php echo e($rose->receiver->username); ?>
+
+
+                                    </td>
+                                    <td>
+                                        <?php echo e($rose->sender->username); ?>
+
+                                    </td>
+                                    <td>
+                                        <?php echo e($rose->created_at); ?>
+
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+                            <tfoot>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Tổng số nhận thưởng: <?php echo e($referdeposits->total()); ?></div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
+                            <?php echo $referdeposits->setPath('')->appends(['listall' => old('listall')])->render(); ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-pane" id="tructieptrader">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                        <thead>
+                            <tr>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.account')); ?></th>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.generation')); ?></th>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.bonus')); ?></th>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.content')); ?></th>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.type')); ?></th>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.date')); ?></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach($directcommissions as $commission): ?>
+                            <tr>
+                                <td class="col-md-1 col-sm-2 col-xs-2">
+                                    <?php if($commission->sender): ?>
+                                        <?php echo e($commission->sender->username); ?>
+
+                                    <?php endif; ?>
+                                </td>
+                                <td class="col-md-3 col-sm-3 col-xs-4">
+                                    <?php if($commission->child): ?>
+                                        F<?php echo e($commission->child); ?>
+
+                                    <?php endif; ?>
+                                </td>
+                                <td class="col-md-1 col-sm-2 col-xs-2"><?php echo e($commission->value); ?></td>
+                                <td class="col-md-3 col-sm-3 col-xs-4"><?php echo e($commission->message); ?></td>
+                                <td class="col-md-2 hidden-sm hidden-xs">
+                                    <?php if($commission->paytype_id == 9): ?>
+                                        <?php echo e(trans('btcbank.direct')); ?>
+
+                                    <?php elseif($commission->paytype_id == 10): ?>
+                                        <?php echo e(trans('btcbank.indirect')); ?>
+
+                                    <?php endif; ?>
+                                </td>
+                                <td class="col-md-2 col-sm-2 col-xs-3"><?php echo e(date('d/m/Y', strtotime($commission->created_at))); ?></td>
+
+                            </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="levertrader">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                        <thead>
+                            <tr>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.account')); ?></th>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.generation')); ?></th>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.bonus')); ?></th>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.content')); ?></th>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.type')); ?></th>
+                                <th class="col-md-1 "><?php echo e(trans('btcbank.date')); ?></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach($indirectcommissions as $commission): ?>
+                            <tr>
+                                <td class="col-md-1 col-sm-2 col-xs-2">
+                                    <?php if($commission->sender): ?>
+                                        <?php echo e($commission->sender->username); ?>
+
+                                    <?php endif; ?>
+                                </td>
+                                <td class="col-md-3 col-sm-3 col-xs-4">
+                                    <?php if($commission->child): ?>
+                                        F<?php echo e($commission->child); ?>
+
+                                    <?php endif; ?>
+                                </td>
+                                <td class="col-md-1 col-sm-2 col-xs-2"><?php echo e($commission->value); ?></td>
+                                <td class="col-md-3 col-sm-3 col-xs-4"><?php echo e($commission->message); ?></td>
+                                <td class="col-md-2 hidden-sm hidden-xs">
+                                    <?php if($commission->paytype_id == 9): ?>
+                                        <?php echo e(trans('btcbank.indirect')); ?>
+
+                                    <?php elseif($commission->paytype_id == 10): ?>
+                                        <?php echo e(trans('btcbank.inindirect')); ?>
+
+                                    <?php endif; ?>
+                                </td>
+                                <td class="col-md-2 col-sm-2 col-xs-3"><?php echo e(date('d/m/Y', strtotime($commission->created_at))); ?></td>
+
+                            </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('inpage-script'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

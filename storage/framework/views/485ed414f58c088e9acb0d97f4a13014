@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+    <?php echo $__env->make('partialsindex.htmlheader', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+  <body class="skin-green sidebar-mini">
+        <div class="wrapper">
+            <div id="page-container">
+                <?php echo $__env->make('partialsindex.mainheader', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+                <!-- Content Wrapper. Contains page content -->
+                <div class="content-wrapper">
+
+                    <?php echo $__env->make('partialsindex.contentheader', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+                    <!-- Main content -->
+                    <div class="container">
+                        <section class="content">
+                            <!-- Your Page Content Here -->
+                            <?php echo $__env->yieldContent('main-content'); ?>
+                        </section><!-- /.content -->
+                    </div>
+                </div><!-- /.content-wrapper -->
+
+                <?php echo $__env->make('partialsindex.controlsidebar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+                <?php echo $__env->make('partialsindex.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            </div> 
+        </div><!-- ./wrapper -->
+
+        <?php echo $__env->make('partialsindex.scripts', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+        <?php echo $__env->yieldContent('inpage-script'); ?>
+    </body>
+</html>

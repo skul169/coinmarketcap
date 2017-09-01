@@ -1,0 +1,63 @@
+<?php $__env->startSection('htmlheader_title'); ?>
+Home
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('main-content'); ?>
+<div class="box">
+    <div class="box-header">
+        <h3 class="box-title">Logs list</h3>
+    </div><!-- /.box-header -->
+    <div class="box-body">
+        <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+
+                <div class="col-sm-12 table-responsive">
+                    <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                        <thead>
+                            <tr role="row">
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1" style="width: 33%">Username</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1"  style="width: 30%;">Code</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1"  style="width: 30%;">Browser</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1"  style="width: 20%;">Ip</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1"  style="width: 20%;">Date</th>
+                                <th class="sorting" tabindex="0" rowspan="1" colspan="1"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach($logs as $log): ?>
+                            <tr role="row" class="odd">
+                                <td class=""><?php echo e($log->username); ?></td>
+                                <td class=""><?php echo e($log->code); ?></td>
+                                <td class=""><?php echo e($log->browser); ?></td>
+                                <td class=""><?php echo e($log->ip); ?></td>
+                                <td class=""><?php echo e(date('d/m/Y H:i:s', strtotime($log->create_date))); ?></td>
+                                <td>
+                                    <a href="<?php echo e(route('log.show', $log->id)); ?>" class="btn btn-info">Xem</a>
+                                </td>
+                            </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                        <tfoot>
+                        </tfoot>
+                    </table>
+                </div>
+
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Number of records: <?php echo e($logs->total()); ?></div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
+                        <?php echo $logs->setPath('')->render(); ?>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.box-body -->
+</div>
+
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

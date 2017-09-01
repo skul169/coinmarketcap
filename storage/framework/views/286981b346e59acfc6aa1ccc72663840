@@ -1,0 +1,13 @@
+<?php $__env->startSection('htmlheader_title'); ?>
+Home
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('main-content'); ?>
+<h1><?php echo e($notification->name); ?></h1>
+<hr>
+
+<a href="<?php echo e(route('notification.index')); ?>" class="btn btn-info">Back</a>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

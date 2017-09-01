@@ -1,0 +1,87 @@
+<?php $__env->startSection('htmlheader_title'); ?>
+Home
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('main-content'); ?>
+
+
+
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <div id="currencies_wrapper" class="dataTables_wrapper no-footer">
+        	<table class="table dataTable no-footer" id="currencies" role="grid">
+            <thead>
+                <tr role="row" style="background:#e7e7e7">
+                	<th class="text-center sorting_asc" rowspan="1" colspan="1" aria-label="#" style="width: 23px;">#</th>
+                	<th id="th-name" class="sortable sorting" tabindex="0"  rowspan="1" colspan="1">Name</th>
+                	<th id="th-marketcap" class="sortable text-right sorting" tabindex="0" rowspan="1" colspan="1" >Price</th>
+                	<th id="th-price" class="sortable text-right sorting" tabindex="0" rowspan="1" colspan="1" >Market Cap</th>
+                	<th id="th-totalsupply" class="sortable text-right sorting" tabindex="0"  rowspan="1" colspan="1">Circulating  Supply</th>
+                	<th id="th-volume" class="sortable text-right sorting" tabindex="0" rowspan="1" colspan="1">Volume (24h)</th>
+                	<th id="th-change" class="sortable text-right sorting" tabindex="0" rowspan="1" colspan="1">% Change (24h)</th>
+                	
+                </tr>
+            </thead>
+            <tbody>
+                <?php $i = 0 ?>
+                <?php foreach($allsymbol as $symbol): ?>
+                    <?php $i++ ?>
+                      <tr id="id-<?php echo e($symbol->symbol); ?>" class="odd" role="row">
+                        <td class="text-center sorting_1"><?php echo e($i); ?></td>
+                        <td class="no-wrap currency-name">
+                            <img src="<?php echo e(URL::to($symbol->stockinfo->imageUrl)); ?>" class="currency-logo" alt="<?php echo e($symbol->stockinfo->coinname); ?>" width="25px"> <?php echo e($symbol->symbol); ?> - <?php echo e($symbol->stockinfo->coinname); ?>
+
+                        </td>
+                        
+                        <td class="no-wrap price text-right"> 
+                            $ <?php echo e(number_format($symbol->price,2, '.', ',')); ?>
+
+                        </td>
+                        <td class="no-wrap text-right market-cap">
+                          $ <?php echo e(number_format($symbol->mktcap,0, '.', ',')); ?>
+
+                        </td>
+                        <td class="no-wrap supply text-right">
+                             <?php echo e($symbol->symbol); ?> <?php echo e(number_format($symbol->supply,0, '.', ',')); ?> 
+                        </td>
+                        <td class="no-wrap text-right volume"> 
+                            $ <?php echo e(number_format($symbol->volume,0, '.', ',')); ?> 
+                        </td>         
+                          <?php if($symbol->capPercent > 0): ?>
+                                <td class="no-wrap percent-24h  positive_change  text-right upPrice">
+                                 <?php echo e(number_format($symbol->capPercent,2, '.', ',')); ?> % <span class="glyphicon glyphicon-chevron-up"></span>
+                                </td> 
+                          <?php elseif($symbol->capPercent < 0): ?>
+                                 <td class="no-wrap percent-24h  positive_change  text-right downPrice">
+                                 <?php echo e(number_format($symbol->capPercent,2, '.', ',')); ?> % <span class="glyphicon glyphicon-chevron-down"></span>
+                                </td>
+                          <?php else: ?>
+                                 <td class="no-wrap percent-24h  positive_change  text-right nochang">
+                                  <?php echo e(number_format($symbol->capPercent,2, '.', ',')); ?> % 
+                                </td>
+                          <?php endif; ?>
+                        
+                        
+                        
+                    </tr> 
+                            
+                <?php endforeach; ?>
+            	
+           </tbody>
+           </table>
+        </div>  <!-- END :currencies_wrapper --> 
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('appindex', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
