@@ -10,6 +10,7 @@
   |
  */
 Route::get('/', 'IndexController@index');
+Route::get('/currencies/{coinname}', 'IndexController@currencies');
 
 Route::get('topup', 'IndexController@topup');
 Route::get('topdown', 'IndexController@topdown');

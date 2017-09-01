@@ -7,6 +7,7 @@ use Validator, Input, Redirect ;
 use DB;
 use App\Events\EvtPushOD;
 use App\StockPrice;
+
 class IndexController extends Controller {
 
 	/*
@@ -117,4 +118,12 @@ class IndexController extends Controller {
         print_r($push_price) ;
         die();
 	}
+
+	public function currencies($coinname) {
+        $result = file_get_contents('https://graphs.coinmarketcap.com/currencies/bitcoin/');
+        $result = json_decode($result);
+
+        // Render into template
+        return view('currencies')->with('coinname', $coinname)->with('data_json' , json_encode($result->price_usd));
+    }
 }
