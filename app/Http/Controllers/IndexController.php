@@ -3,7 +3,8 @@
 use App\Http\Controllers\controller;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator as Paginator;
-use Validator, Input, Redirect ; 
+use Illuminate\Support\Facades\Cache;
+use Validator, Input, Redirect ;
 use DB;
 use App\Events\EvtPushOD;
 use App\StockPrice;
@@ -120,10 +121,30 @@ class IndexController extends Controller {
 	}
 
 	public function currencies($coinname) {
-        $result = file_get_contents('https://graphs.coinmarketcap.com/currencies/bitcoin/');
+        //coin detail
+        $coin_detail = file_get_contents('https://api.coinmarketcap.com/v1/ticker/'. $coinname .'/');
+        $coin_detail = json_decode($coin_detail);
+        $coin_detail = $coin_detail[0];
+
+	    $result_all = file_get_contents('https://files.coinmarketcap.com/generated/search/quick_search.json');
+        $result_all = json_decode($result_all);
+
+        $cache_result = Cache::get('coin_list_all');
+        if (!$cache_result) {
+            $cache_result = array();
+            foreach ($result_all as $key => $value) {
+                $cache_result[$value->slug] = $value;
+            }
+            Cache::forever('coin_list_all', $cache_result);
+        }
+
+        $result = file_get_contents('https://graphs.coinmarketcap.com/currencies/'. $coinname .'/');
         $result = json_decode($result);
 
         // Render into template
-        return view('currencies')->with('coinname', $coinname)->with('data_json' , json_encode($result->price_usd));
+        return view('currencies')->with('coinname', $coinname)
+            ->with('data_json' , json_encode($result->price_usd))
+            ->with('coin_info', $cache_result[$coinname])
+            ->with('coin_detail', $coin_detail);
     }
 }

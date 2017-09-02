@@ -79,25 +79,26 @@
                 <div class="col-xs-6 col-sm-4 col-md-4">
                     <h1 class="text-large">
                         <img src="https://files.coinmarketcap.com/static/img/coins/32x32/{{$coinname}}.png"
-                                class="currency-logo-32x32" alt="Bitcoin Cash"> Bitcoin Cash
-                        <small class="bold">(BCH)</small>
+                                class="currency-logo-32x32" alt="{{$coin_info->name}}"> {{$coin_info->name}}
+                        <small class="bold">({{$coin_info->tokens[1]}})</small>
                     </h1>
                 </div>
                 <div class="col-xs-6 col-sm-8 col-md-4 text-left">
-                    <span class="text-large" id="quote_price">$617.74</span> <span class="text-large  positive_change ">(4.55%)</span>
+                    <span class="text-large" id="quote_price">${{$coin_detail->price_usd}}</span>
+                    <span class="text-large  positive_change ">({{$coin_detail->percent_change_24h}}%)</span>
                     <br>
-                    <small class="text-gray">0.12771500 BTC</small>
-                    <small class=" positive_change "> (2.15%)</small>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg text-left">
-                            <!-- Mobile Button -->
-                            <a href="https://changelly.com/exchange/BTC/BCC/1?ref_id=coinmarketcap" target="_blank">
-                                <div class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-flash"></span> Buy
-                                    / Sell Instantly
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    <small class="text-gray">{{$coin_detail->price_btc}} BTC</small>
+                    <small class=" positive_change "> ({{$coin_detail->percent_change_1h}}%)</small>
+                    {{--<div class="row">--}}
+                        {{--<div class="col-xs-12 col-sm-12 hidden-md hidden-lg text-left">--}}
+                            {{--<!-- Mobile Button -->--}}
+                            {{--<a href="https://changelly.com/exchange/BTC/BCC/1?ref_id=coinmarketcap" target="_blank">--}}
+                                {{--<div class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-flash"></span> Buy--}}
+                                    {{--/ Sell Instantly--}}
+                                {{--</div>--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
                 </div>
             </div>
 
@@ -110,8 +111,8 @@
                             <h3>Market Cap</h3>
                         </div>
                         <div class="coin-summary-item-detail">
-                            $10,226,844,582 <br>
-                            <span class="text-gray">2,114,341 BTC</span> <br>
+                            ${{number_format($coin_detail->market_cap_usd)}} <br>
+                            <span class="text-gray">{{number_format($coin_detail->market_cap_usd/($coin_detail->price_usd/$coin_detail->price_btc))}} BTC</span> <br>
                         </div>
                     </div>
 
@@ -120,8 +121,9 @@
                             <h3>Volume (24h)</h3>
                         </div>
                         <div class="coin-summary-item-detail">
-                            $244,441,000<br>
-                            <span class="text-gray">50,537 BTC</span>
+                            <?php $index_name = '24h_volume_usd'; ?>
+                            ${{number_format($coin_detail->$index_name)}}<br>
+                            <span class="text-gray">{{number_format($coin_detail->$index_name/($coin_detail->price_usd/$coin_detail->price_btc))}} BTC</span>
 
                         </div>
                     </div>
@@ -133,17 +135,17 @@
                             <h3>Circulating Supply</h3>
                         </div>
                         <div class="coin-summary-item-detail">
-                            16,555,150 BCH
+                            {{number_format($coin_detail->total_supply)}} BCH
                         </div>
                     </div>
-                    <div class="coin-summary-item col-xs-6  col-md-3 ">
-                        <div class="coin-summary-item-header">
-                            <h3>Max Supply</h3>
-                        </div>
-                        <div class="coin-summary-item-detail">
-                            21,000,000 BCH
-                        </div>
-                    </div>
+                    {{--<div class="coin-summary-item col-xs-6  col-md-3 ">--}}
+                        {{--<div class="coin-summary-item-header">--}}
+                            {{--<h3>Max Supply</h3>--}}
+                        {{--</div>--}}
+                        {{--<div class="coin-summary-item-detail">--}}
+                            {{--21,000,000 BCH--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
                 </div>
             </div>
             <div class="row bottom-margin-1x">
