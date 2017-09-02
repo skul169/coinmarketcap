@@ -83,6 +83,32 @@
         .positive_change {
             color: #093;
         }
+        .text-gray {
+            color: gray;
+        }
+        small, .small {
+            font-size: 85%;
+        }
+        .coin-summary-item {
+            padding: 0;
+        }
+        .coin-summary-item h3 {
+            padding: 10px;
+            border-top: 1px solid #DDD;
+            border-bottom: 1px solid #DDD;
+            border-left: 0;
+            border-right: 0;
+            background-color: #FFF;
+            margin-top: 0;
+            font-size: .9em;
+            font-weight: bold;
+            white-space: nowrap;
+            margin-bottom: 0;
+        }
+        .coin-summary-item-detail {
+            padding: 10px;
+            font-size: .9em;
+        }
     </style>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
@@ -100,10 +126,10 @@
                 </div>
                 <div class="col-xs-6 col-sm-8 col-md-4 text-left">
                     <span class="text-large" id="quote_price">${{$coin_detail->price_usd}}</span>
-                    <span class="text-large  positive_change ">({{$coin_detail->percent_change_24h}}%)</span>
+                    <span class="text-large @if($coin_detail->percent_change_24h < 0)negative_change @else positive_change @endif ">({{$coin_detail->percent_change_24h}}%)</span>
                     <br>
                     <small class="text-gray">{{$coin_detail->price_btc}} BTC</small>
-                    <small class=" positive_change "> ({{$coin_detail->percent_change_1h}}%)</small>
+                    <small class="@if($coin_detail->percent_change_1h < 0) negative_change @else positive_change @endif"> ({{$coin_detail->percent_change_1h}}%)</small>
                     {{--<div class="row">--}}
                         {{--<div class="col-xs-12 col-sm-12 hidden-md hidden-lg text-left">--}}
                             {{--<!-- Mobile Button -->--}}

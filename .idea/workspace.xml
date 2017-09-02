@@ -55,11 +55,11 @@
       <file leaf-file-name="currencies.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="73" column="42" lean-forward="false" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+            <state relative-caret-position="544">
+              <caret line="110" column="9" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
               <folding>
-                <marker date="1504353693716" expanded="false" signature="8088:8102" ph="..." />
-                <marker date="1504353693716" expanded="false" signature="8524:8571" ph="..." />
+                <marker date="1504364366659" expanded="false" signature="8903:8917" ph="..." />
+                <marker date="1504364366659" expanded="false" signature="9339:9386" ph="..." />
               </folding>
             </state>
           </provider>
@@ -211,12 +211,12 @@
       <updated>1504263220340</updated>
       <workItem from="1504263221665" duration="566000" />
       <workItem from="1504277884667" duration="5324000" />
-      <workItem from="1504349936292" duration="3734000" />
+      <workItem from="1504349936292" duration="4186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9624000" />
+    <option name="totallyTimeSpent" value="10076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -299,8 +299,8 @@
         <state relative-caret-position="1071">
           <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
           <folding>
-            <marker date="1504353693716" expanded="false" signature="8088:8102" ph="..." />
-            <marker date="1504353693716" expanded="false" signature="8524:8571" ph="..." />
+            <marker date="1504364366659" expanded="false" signature="8903:8917" ph="..." />
+            <marker date="1504364366659" expanded="false" signature="9339:9386" ph="..." />
           </folding>
         </state>
       </provider>
@@ -404,11 +404,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="73" column="42" lean-forward="false" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+        <state relative-caret-position="544">
+          <caret line="110" column="9" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
           <folding>
-            <marker date="1504353693716" expanded="false" signature="8088:8102" ph="..." />
-            <marker date="1504353693716" expanded="false" signature="8524:8571" ph="..." />
+            <marker date="1504364366659" expanded="false" signature="8903:8917" ph="..." />
+            <marker date="1504364366659" expanded="false" signature="9339:9386" ph="..." />
           </folding>
         </state>
       </provider>
