@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4069a55b-fb2a-4de2-8ade-805d45b37241" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/currencies.blade.php" afterPath="$PROJECT_DIR$/resources/views/currencies.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,9 +55,12 @@
       <file leaf-file-name="currencies.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="137" column="71" lean-forward="false" selection-start-line="137" selection-start-column="71" selection-end-line="137" selection-end-column="71" />
-              <folding />
+            <state relative-caret-position="119">
+              <caret line="73" column="42" lean-forward="false" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+              <folding>
+                <marker date="1504353693716" expanded="false" signature="8088:8102" ph="..." />
+                <marker date="1504353693716" expanded="false" signature="8524:8571" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,12 +211,12 @@
       <updated>1504263220340</updated>
       <workItem from="1504263221665" duration="566000" />
       <workItem from="1504277884667" duration="5324000" />
-      <workItem from="1504349936292" duration="2692000" />
+      <workItem from="1504349936292" duration="3734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8582000" />
+    <option name="totallyTimeSpent" value="9624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -297,7 +298,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-          <folding />
+          <folding>
+            <marker date="1504353693716" expanded="false" signature="8088:8102" ph="..." />
+            <marker date="1504353693716" expanded="false" signature="8524:8571" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -400,9 +404,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="137" column="71" lean-forward="false" selection-start-line="137" selection-start-column="71" selection-end-line="137" selection-end-column="71" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="73" column="42" lean-forward="false" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+          <folding>
+            <marker date="1504353693716" expanded="false" signature="8088:8102" ph="..." />
+            <marker date="1504353693716" expanded="false" signature="8524:8571" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

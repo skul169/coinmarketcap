@@ -5,16 +5,16 @@
 @endsection
 
 @section('inpage-script')
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//code.highcharts.com/highcharts.js"></script>
+    <script src="//code.highcharts.com/modules/exporting.js"></script>
     <script>
         Highcharts.chart('highcharts-graph', {
             chart: {
                 zoomType: 'x'
             },
             title: {
-                text: '{{$coinname}} chart'
+                text: '{{$coin_info->name}} chart'
             },
             subtitle: {
 //                text: document.ontouchstart === undefined ?
@@ -69,6 +69,21 @@
 
 
 @section('main-content')
+    <style>
+        body {
+            font-family: Arial !important;
+        }
+        .text-large {
+            font-size: 28px;
+            line-height: 1.1;
+        }
+        .negative_change {
+            color: #d14836;
+        }
+        .positive_change {
+            color: #093;
+        }
+    </style>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
             <div id="title">
@@ -178,18 +193,18 @@
                     </div>
                     <div id="markets" class="tab-pane">
                         <div class="tab-header">
-                            <h2 class="pull-left">Bitcoin Cash Markets</h2><br>
+                            <h2 class="pull-left">{{$coin_info->name}} Markets</h2><br>
                         </div>
                     </div>
                     <div id="social" class="tab-pane">
                         <div class="tab-header">
-                            <h2 class="pull-left">Bitcoin Cash Social Media Feeds</h2>
+                            <h2 class="pull-left">{{$coin_info->name}} Social Media Feeds</h2>
                             <div class="clear"></div>
                         </div>
                     </div>
                     <div id="tools" class="tab-pane">
                         <div class="tab-header">
-                            <h2 class="pull-left">Tools for Bitcoin Cash</h2>
+                            <h2 class="pull-left">Tools for {{$coin_info->name}}</h2>
                             <div class="clear bottom-margin-1x"></div>
                         </div>
                     </div>
