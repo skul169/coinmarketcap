@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4069a55b-fb2a-4de2-8ade-805d45b37241" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/currencies.blade.php" afterPath="$PROJECT_DIR$/resources/views/currencies.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,21 +34,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
-                <element signature="e#39#75#0#PHP" expanded="true" />
-                <element signature="e#337#733#0#PHP" expanded="false" />
-                <element signature="e#736#874#0#PHP" expanded="false" />
-                <element signature="e#876#957#0#PHP" expanded="false" />
-                <element signature="e#1528#1800#0#PHP" expanded="false" />
-                <element signature="e#1802#2078#0#PHP" expanded="false" />
-                <element signature="e#2081#3158#0#PHP" expanded="false" />
-                <marker date="1504352549630" expanded="true" signature="2191:2269" ph="SELECT sum(m... sestockprice" />
+                <element signature="e#39#67#0#PHP" expanded="true" />
+                <element signature="e#320#716#0#PHP" expanded="false" />
+                <element signature="e#719#857#0#PHP" expanded="false" />
+                <element signature="e#859#940#0#PHP" expanded="false" />
+                <element signature="e#1511#1783#0#PHP" expanded="false" />
+                <element signature="e#1785#2061#0#PHP" expanded="false" />
+                <element signature="e#2064#3141#0#PHP" expanded="false" />
+                <marker date="1504368724022" expanded="true" signature="2174:2252" ph="SELECT sum(m... sestockprice" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/pragmarx/google2fa/src/Vendor/Laravel/ServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,21 +66,18 @@
       <file leaf-file-name="currencies.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
+            <state relative-caret-position="2244">
               <caret line="132" column="42" lean-forward="false" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
-              <folding>
-                <marker date="1504365378439" expanded="false" signature="9449:9463" ph="..." />
-                <marker date="1504365378439" expanded="false" signature="9885:9932" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="35" />
+            <state relative-caret-position="493">
+              <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -98,8 +106,8 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/userads/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/resources/views/currencies.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
       </list>
     </option>
   </component>
@@ -137,8 +145,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,6 +182,51 @@
               <item name="adm_opbtcstock" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adm_opbtcstock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adm_opbtcstock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adm_opbtcstock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adm_opbtcstock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pragmarx" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adm_opbtcstock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adm_opbtcstock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pragmarx" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="google2fa" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adm_opbtcstock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adm_opbtcstock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pragmarx" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="google2fa" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adm_opbtcstock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adm_opbtcstock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pragmarx" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="google2fa" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="adm_opbtcstock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adm_opbtcstock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pragmarx" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="google2fa" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Laravel" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -211,12 +264,13 @@
       <updated>1504263220340</updated>
       <workItem from="1504263221665" duration="566000" />
       <workItem from="1504277884667" duration="5324000" />
-      <workItem from="1504349936292" duration="5468000" />
+      <workItem from="1504349936292" duration="5651000" />
+      <workItem from="1504366637345" duration="1947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11358000" />
+    <option name="totallyTimeSpent" value="13488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -269,19 +323,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="132" column="42" lean-forward="false" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="21" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="21" />
+          <folding>
+            <element signature="e#39#67#0#PHP" expanded="true" />
+            <element signature="e#320#716#0#PHP" expanded="false" />
+            <element signature="e#719#857#0#PHP" expanded="false" />
+            <element signature="e#859#940#0#PHP" expanded="false" />
+            <element signature="e#1511#1783#0#PHP" expanded="false" />
+            <element signature="e#1785#2061#0#PHP" expanded="false" />
+            <element signature="e#2064#3141#0#PHP" expanded="false" />
+            <marker date="1504368724022" expanded="true" signature="2174:2252" ph="SELECT sum(m... sestockprice" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3995">
+          <caret line="235" column="39" lean-forward="false" selection-start-line="235" selection-start-column="33" selection-end-line="235" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2142">
           <caret line="126" column="79" lean-forward="false" selection-start-line="126" selection-start-column="70" selection-end-line="126" selection-end-column="79" />
           <folding>
-            <element signature="e#39#75#0#PHP" expanded="true" />
-            <element signature="e#337#733#0#PHP" expanded="false" />
-            <element signature="e#736#874#0#PHP" expanded="false" />
-            <element signature="e#876#957#0#PHP" expanded="false" />
-            <element signature="e#1528#1800#0#PHP" expanded="false" />
-            <element signature="e#1802#2078#0#PHP" expanded="false" />
-            <element signature="e#2081#3158#0#PHP" expanded="false" />
-            <marker date="1504352549630" expanded="true" signature="2191:2269" ph="SELECT sum(m... sestockprice" />
+            <element signature="e#39#67#0#PHP" expanded="true" />
+            <element signature="e#320#716#0#PHP" expanded="false" />
+            <element signature="e#719#857#0#PHP" expanded="false" />
+            <element signature="e#859#940#0#PHP" expanded="false" />
+            <element signature="e#1511#1783#0#PHP" expanded="false" />
+            <element signature="e#1785#2061#0#PHP" expanded="false" />
+            <element signature="e#2064#3141#0#PHP" expanded="false" />
+            <marker date="1504368724022" expanded="true" signature="2174:2252" ph="SELECT sum(m... sestockprice" />
           </folding>
         </state>
       </provider>
@@ -298,10 +401,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-          <folding>
-            <marker date="1504365378439" expanded="false" signature="9449:9463" ph="..." />
-            <marker date="1504365378439" expanded="false" signature="9885:9932" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -377,39 +477,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#75#0#PHP" expanded="true" />
-            <element signature="e#337#733#0#PHP" expanded="false" />
-            <element signature="e#736#874#0#PHP" expanded="false" />
-            <element signature="e#876#957#0#PHP" expanded="false" />
-            <element signature="e#1528#1800#0#PHP" expanded="false" />
-            <element signature="e#1802#2078#0#PHP" expanded="false" />
-            <element signature="e#2081#3158#0#PHP" expanded="false" />
-            <marker date="1504352549630" expanded="true" signature="2191:2269" ph="SELECT sum(m... sestockprice" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
+        <state relative-caret-position="2244">
           <caret line="132" column="42" lean-forward="false" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
-          <folding>
-            <marker date="1504365378439" expanded="false" signature="9449:9463" ph="..." />
-            <marker date="1504365378439" expanded="false" signature="9885:9932" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="35" />
+        <state relative-caret-position="493">
+          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/pragmarx/google2fa/src/Vendor/Laravel/ServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#39#67#0#PHP" expanded="true" />
+            <element signature="e#320#716#0#PHP" expanded="false" />
+            <element signature="e#719#857#0#PHP" expanded="false" />
+            <element signature="e#859#940#0#PHP" expanded="false" />
+            <element signature="e#1511#1783#0#PHP" expanded="false" />
+            <element signature="e#1785#2061#0#PHP" expanded="false" />
+            <element signature="e#2064#3141#0#PHP" expanded="false" />
+            <marker date="1504368724022" expanded="true" signature="2174:2252" ph="SELECT sum(m... sestockprice" />
+          </folding>
         </state>
       </provider>
     </entry>

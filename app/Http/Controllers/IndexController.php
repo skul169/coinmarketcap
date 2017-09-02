@@ -1,6 +1,5 @@
 <?php namespace App\Http\Controllers;
 
-use App\Http\Controllers\controller;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator as Paginator;
 use Illuminate\Support\Facades\Cache;
@@ -9,7 +8,7 @@ use DB;
 use App\Events\EvtPushOD;
 use App\StockPrice;
 
-class IndexController extends Controller {
+class IndexController extends \Illuminate\Routing\Controller {
 
 	/*
 	|--------------------------------------------------------------------------

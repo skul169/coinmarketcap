@@ -240,8 +240,8 @@ CREATE TABLE `sestockprice` (
   `mktcap` double NOT NULL DEFAULT '0',
   `cap24hrChangePercent` float NOT NULL DEFAULT '0',
   `capPercent` float NOT NULL DEFAULT '0',
-  `txdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `txdate` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
   `published` int(11) NOT NULL DEFAULT '0',
   `sortOrder` int(11) NOT NULL DEFAULT '0',
   `status` int(11) NOT NULL DEFAULT '0'
@@ -324,7 +324,7 @@ CREATE TABLE `stock_info` (
   `sortOrder` int(11) DEFAULT NULL,
   `status` tinyint(4) NOT NULL DEFAULT '1',
   `type` int(11) NOT NULL DEFAULT '0',
-  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
