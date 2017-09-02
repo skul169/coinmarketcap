@@ -125,6 +125,9 @@ class IndexController extends Controller {
         $coin_detail = file_get_contents('https://api.coinmarketcap.com/v1/ticker/'. $coinname .'/');
         $coin_detail = json_decode($coin_detail);
         $coin_detail = $coin_detail[0];
+        if ($coin_detail->rank > 100) {
+            return redirect()->action('IndexController@index');
+        }
 
 	    $result_all = file_get_contents('https://files.coinmarketcap.com/generated/search/quick_search.json');
         $result_all = json_decode($result_all);
