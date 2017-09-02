@@ -52,24 +52,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="currencies.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="currencies.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="110" column="9" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+            <state relative-caret-position="712">
+              <caret line="132" column="42" lean-forward="false" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
               <folding>
-                <marker date="1504364366659" expanded="false" signature="8903:8917" ph="..." />
-                <marker date="1504364366659" expanded="false" signature="9339:9386" ph="..." />
+                <marker date="1504365378439" expanded="false" signature="9449:9463" ph="..." />
+                <marker date="1504365378439" expanded="false" signature="9885:9932" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -211,12 +211,12 @@
       <updated>1504263220340</updated>
       <workItem from="1504263221665" duration="566000" />
       <workItem from="1504277884667" duration="5324000" />
-      <workItem from="1504349936292" duration="4186000" />
+      <workItem from="1504349936292" duration="5468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10076000" />
+    <option name="totallyTimeSpent" value="11358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -299,8 +299,8 @@
         <state relative-caret-position="1071">
           <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
           <folding>
-            <marker date="1504364366659" expanded="false" signature="8903:8917" ph="..." />
-            <marker date="1504364366659" expanded="false" signature="9339:9386" ph="..." />
+            <marker date="1504365378439" expanded="false" signature="9449:9463" ph="..." />
+            <marker date="1504365378439" expanded="false" signature="9885:9932" ph="..." />
           </folding>
         </state>
       </provider>
@@ -363,14 +363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/userads/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -404,12 +396,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="110" column="9" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+        <state relative-caret-position="712">
+          <caret line="132" column="42" lean-forward="false" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
           <folding>
-            <marker date="1504364366659" expanded="false" signature="8903:8917" ph="..." />
-            <marker date="1504364366659" expanded="false" signature="9339:9386" ph="..." />
+            <marker date="1504365378439" expanded="false" signature="9449:9463" ph="..." />
+            <marker date="1504365378439" expanded="false" signature="9885:9932" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>

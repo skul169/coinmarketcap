@@ -77,6 +77,9 @@
             font-size: 28px;
             line-height: 1.1;
         }
+        .bold {
+            font-weight: bold;
+        }
         .negative_change {
             color: #d14836;
         }
@@ -91,6 +94,10 @@
         }
         .coin-summary-item {
             padding: 0;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
         }
         .coin-summary-item h3 {
             padding: 10px;
@@ -108,6 +115,27 @@
         .coin-summary-item-detail {
             padding: 10px;
             font-size: .9em;
+        }
+        .bottom-margin-2x {
+            margin-bottom: 40px;
+        }
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .bottom-margin-1x {
+            margin-bottom: 20px;
+        }
+        #title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-family: Arial !important;
+            margin-top: 0;
+        }
+
+        #title a {
+            color: #000;
         }
     </style>
     <div class="row">
@@ -179,14 +207,14 @@
                             {{number_format($coin_detail->total_supply)}} BCH
                         </div>
                     </div>
-                    {{--<div class="coin-summary-item col-xs-6  col-md-3 ">--}}
-                        {{--<div class="coin-summary-item-header">--}}
-                            {{--<h3>Max Supply</h3>--}}
-                        {{--</div>--}}
-                        {{--<div class="coin-summary-item-detail">--}}
-                            {{--21,000,000 BCH--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
+                    <div class="coin-summary-item col-xs-6  col-md-3 ">
+                        <div class="coin-summary-item-header">
+                            <h3>Max Supply</h3>
+                        </div>
+                        <div class="coin-summary-item-detail">
+                            21,000,000 BCH
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row bottom-margin-1x">
