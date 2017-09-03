@@ -53,8 +53,12 @@ class IndexController extends \Illuminate\Routing\Controller {
                         ->orderBy('sortOrder', 'ASC')
                         ->get();
 
+        $list_all = file_get_contents('https://api.coinmarketcap.com/v1/ticker/?limit=100');
+        $list_all = json_decode($list_all);
+
 		// Render into template
-		return view('index')->with('allsymbol', $allsymbol);
+		return view('index')->with('allsymbol', $allsymbol)
+            ->with('list_all', $list_all);
 	}
 
 	public function topup()

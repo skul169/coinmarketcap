@@ -24,49 +24,51 @@ Home
                 </tr>
             </thead>
             <tbody>
-                <?php $i = 0 ?>
-                <?php foreach($allsymbol as $symbol): ?>
-                    <?php $i++ ?>
-                      <tr id="id-<?php echo e($symbol->symbol); ?>" class="odd" role="row">
-                        <td class="text-center sorting_1"><?php echo e($i); ?></td>
+                <?php foreach($list_all as $key => $coin): ?>
+                    <tr id="id-<?php echo e($coin->symbol); ?>" class="odd" role="row">
+                        <td class="text-center sorting_1"><?php echo e(($key + 1)); ?></td>
                         <td class="no-wrap currency-name">
-                            <img src="<?php echo e(URL::to($symbol->stockinfo->imageUrl)); ?>" class="currency-logo" alt="<?php echo e($symbol->stockinfo->coinname); ?>" width="25px"> <?php echo e($symbol->symbol); ?> - <?php echo e($symbol->stockinfo->coinname); ?>
+                            <a href="/currencies/<?php echo e($coin->id); ?>" style="text-decoration: underline; color: blue;">
+                            <img src="https://files.coinmarketcap.com/static/img/coins/32x32/<?php echo e($coin->id); ?>.png" class="currency-logo" alt="<?php echo e($coin->name); ?>" width="25px">
+                            <?php echo e($coin->symbol); ?> - <?php echo e($coin->name); ?>
 
+                            </a>
                         </td>
-                        
-                        <td class="no-wrap price text-right"> 
-                            $ <?php echo e(number_format($symbol->price,2, '.', ',')); ?>
+
+                        <td class="no-wrap price text-right">
+                            $ <?php echo e(number_format($coin->price_usd,5, '.', ',')); ?>
 
                         </td>
                         <td class="no-wrap text-right market-cap">
-                          $ <?php echo e(number_format($symbol->mktcap,0, '.', ',')); ?>
+                            $ <?php echo e(number_format($coin->market_cap_usd,0, '.', ',')); ?>
 
                         </td>
                         <td class="no-wrap supply text-right">
-                             <?php echo e($symbol->symbol); ?> <?php echo e(number_format($symbol->supply,0, '.', ',')); ?> 
+                            <?php echo e(number_format($coin->total_supply,0, '.', ',')); ?> <?php echo e($coin->symbol); ?>
+
                         </td>
-                        <td class="no-wrap text-right volume"> 
-                            $ <?php echo e(number_format($symbol->volume,0, '.', ',')); ?> 
-                        </td>         
-                          <?php if($symbol->capPercent > 0): ?>
-                                <td class="no-wrap percent-24h  positive_change  text-right upPrice">
-                                 <?php echo e(number_format($symbol->capPercent,2, '.', ',')); ?> % <span class="glyphicon glyphicon-chevron-up"></span>
-                                </td> 
-                          <?php elseif($symbol->capPercent < 0): ?>
-                                 <td class="no-wrap percent-24h  positive_change  text-right downPrice">
-                                 <?php echo e(number_format($symbol->capPercent,2, '.', ',')); ?> % <span class="glyphicon glyphicon-chevron-down"></span>
-                                </td>
-                          <?php else: ?>
-                                 <td class="no-wrap percent-24h  positive_change  text-right nochang">
-                                  <?php echo e(number_format($symbol->capPercent,2, '.', ',')); ?> % 
-                                </td>
-                          <?php endif; ?>
-                        
-                        
-                        
-                    </tr> 
-                            
+                        <td class="no-wrap text-right volume">
+                            <?php $index_name = '24h_volume_usd'; ?>
+                            $ <?php echo e(number_format($coin->$index_name,0, '.', ',')); ?>
+
+                        </td>
+                        <?php if($coin->percent_change_24h > 0): ?>
+                            <td class="no-wrap percent-24h  positive_change  text-right upPrice">
+                            <?php echo e(number_format($coin->percent_change_24h,2, '.', ',')); ?> % <span class="glyphicon glyphicon-chevron-up"></span>
+                            </td>
+                        <?php elseif($coin->percent_change_24h < 0): ?>
+                            <td class="no-wrap percent-24h  positive_change  text-right downPrice">
+                            <?php echo e(number_format($coin->percent_change_24h,2, '.', ',')); ?> % <span class="glyphicon glyphicon-chevron-down"></span>
+                            </td>
+                        <?php else: ?>
+                            <td class="no-wrap percent-24h  positive_change  text-right nochang">
+                            <?php echo e(number_format($coin->percent_change_24h,2, '.', ',')); ?> %
+                            </td>
+                        <?php endif; ?>
+                    </tr>
                 <?php endforeach; ?>
+
+
             	
            </tbody>
            </table>

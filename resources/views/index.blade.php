@@ -26,46 +26,46 @@ Home
                 </tr>
             </thead>
             <tbody>
-                <?php $i = 0 ?>
-                @foreach($allsymbol as $symbol)
-                    <?php $i++ ?>
-                      <tr id="id-{{ $symbol->symbol }}" class="odd" role="row">
-                        <td class="text-center sorting_1">{{ $i }}</td>
+                @foreach($list_all as $key => $coin)
+                    <tr id="id-{{ $coin->symbol }}" class="odd" role="row">
+                        <td class="text-center sorting_1">{{ ($key + 1) }}</td>
                         <td class="no-wrap currency-name">
-                            <img src="{{URL::to($symbol->stockinfo->imageUrl)}}" class="currency-logo" alt="{{ $symbol->stockinfo->coinname    }}" width="25px"> {{ $symbol->symbol }} - {{ $symbol->stockinfo->coinname}}
+                            <a href="/currencies/{{$coin->id}}" style="text-decoration: underline; color: blue;">
+                            <img src="https://files.coinmarketcap.com/static/img/coins/32x32/{{$coin->id}}.png" class="currency-logo" alt="{{ $coin->name }}" width="25px">
+                            {{ $coin->symbol }} - {{ $coin->name}}
+                            </a>
                         </td>
-                        
-                        <td class="no-wrap price text-right"> 
-                            $ {{number_format($symbol->price,2, '.', ',')}}
+
+                        <td class="no-wrap price text-right">
+                            $ {{number_format($coin->price_usd,5, '.', ',')}}
                         </td>
                         <td class="no-wrap text-right market-cap">
-                          $ {{number_format($symbol->mktcap,0, '.', ',')}}
+                            $ {{number_format($coin->market_cap_usd,0, '.', ',')}}
                         </td>
                         <td class="no-wrap supply text-right">
-                             {{ $symbol->symbol }} {{number_format($symbol->supply,0, '.', ',')}} 
+                            {{number_format($coin->total_supply,0, '.', ',')}} {{ $coin->symbol }}
                         </td>
-                        <td class="no-wrap text-right volume"> 
-                            $ {{number_format($symbol->volume,0, '.', ',')}} 
-                        </td>         
-                          @if($symbol->capPercent > 0)
-                                <td class="no-wrap percent-24h  positive_change  text-right upPrice">
-                                 {{number_format($symbol->capPercent,2, '.', ',')}} % <span class="glyphicon glyphicon-chevron-up"></span>
-                                </td> 
-                          @elseif($symbol->capPercent < 0)
-                                 <td class="no-wrap percent-24h  positive_change  text-right downPrice">
-                                 {{number_format($symbol->capPercent,2, '.', ',')}} % <span class="glyphicon glyphicon-chevron-down"></span>
-                                </td>
-                          @else
-                                 <td class="no-wrap percent-24h  positive_change  text-right nochang">
-                                  {{number_format($symbol->capPercent,2, '.', ',')}} % 
-                                </td>
-                          @endif
-                        
-                        
-                        
-                    </tr> 
-                            
+                        <td class="no-wrap text-right volume">
+                            <?php $index_name = '24h_volume_usd'; ?>
+                            $ {{number_format($coin->$index_name,0, '.', ',')}}
+                        </td>
+                        @if($coin->percent_change_24h > 0)
+                            <td class="no-wrap percent-24h  positive_change  text-right upPrice">
+                            {{number_format($coin->percent_change_24h,2, '.', ',')}} % <span class="glyphicon glyphicon-chevron-up"></span>
+                            </td>
+                        @elseif($coin->percent_change_24h < 0)
+                            <td class="no-wrap percent-24h  positive_change  text-right downPrice">
+                            {{number_format($coin->percent_change_24h,2, '.', ',')}} % <span class="glyphicon glyphicon-chevron-down"></span>
+                            </td>
+                        @else
+                            <td class="no-wrap percent-24h  positive_change  text-right nochang">
+                            {{number_format($coin->percent_change_24h,2, '.', ',')}} %
+                            </td>
+                        @endif
+                    </tr>
                 @endforeach
+
+
             	
            </tbody>
            </table>
