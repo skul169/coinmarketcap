@@ -49,6 +49,11 @@ class IndexController extends \Illuminate\Routing\Controller {
 		// 			->orderBy('sortOrder', 'ASC')
 		// 			->get();
 
+        //global data
+        $global = file_get_contents('https://api.coinmarketcap.com/v1/global/');
+        $global = json_decode($global);
+
+
 		 $allsymbol = StockPrice::query()
                         ->orderBy('sortOrder', 'ASC')
                         ->get();
@@ -58,7 +63,8 @@ class IndexController extends \Illuminate\Routing\Controller {
 
 		// Render into template
 		return view('index')->with('allsymbol', $allsymbol)
-            ->with('list_all', $list_all);
+            ->with('list_all', $list_all)
+            ->with('global', $global);
 	}
 
 	public function topup()
@@ -124,6 +130,10 @@ class IndexController extends \Illuminate\Routing\Controller {
 	}
 
 	public function currencies($coinname) {
+        //global data
+        $global = file_get_contents('https://api.coinmarketcap.com/v1/global/');
+        $global = json_decode($global);
+
         //coin detail
         $coin_detail = file_get_contents('https://api.coinmarketcap.com/v1/ticker/'. $coinname .'/');
         $coin_detail = json_decode($coin_detail);
@@ -151,6 +161,7 @@ class IndexController extends \Illuminate\Routing\Controller {
         return view('currencies')->with('coinname', $coinname)
             ->with('data_json' , json_encode($result->price_usd))
             ->with('coin_info', $cache_result[$coinname])
-            ->with('coin_detail', $coin_detail);
+            ->with('coin_detail', $coin_detail)
+            ->with('global', $global);
     }
 }

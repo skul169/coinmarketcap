@@ -13,10 +13,10 @@ Home
                 <div class="col-xs-12 col-sm-7">
                     <div id="global-stats-values" class="small">
                         <ul class="list-inline stat-counters">
-                            Market Cap: <strong><a href="/charts/">$138,411,545,071</a></strong>
+                            Market Cap: <strong><a href="/">$<?php echo e(number_format($global->total_market_cap_usd)); ?></a></strong>
                             <li>
-                                / 24h Vol: <strong><a href="/charts/">$9,470,158,812</a></strong>
-                                / BTC Dominance: <strong><a href="/charts/#dominance-percentage">48.5%</a></strong>
+                                / 24h Vol: <strong><a href="/">$<?php echo e(number_format($global->total_24h_volume_usd)); ?></a></strong>
+                                / BTC Dominance: <strong><a href="/"><?php echo e($global->bitcoin_percentage_of_market_cap); ?>%</a></strong>
                             </li>
                         </ul>
                     </div>
@@ -212,9 +212,7 @@ Home
                 </div>
                 <div class="row text-center" id="total_market_cap">
                     <strong>Total Market Cap:
-                        <span id="total-marketcap" data-usd="138,802,680,544" data-btc="33,695,354">
-                        $138,802,680,544
-                    </span>
+                        <span id="total-marketcap">$<?php echo e(number_format($global->total_market_cap_usd)); ?></span>
                     </strong>
                 </div>
                 <hr/>

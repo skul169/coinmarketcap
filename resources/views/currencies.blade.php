@@ -78,10 +78,10 @@
                 <div class="col-xs-12 col-sm-7">
                     <div id="global-stats-values" class="small">
                         <ul class="list-inline stat-counters">
-                            Market Cap: <strong><a href="/charts/">$138,411,545,071</a></strong>
+                            Market Cap: <strong><a href="/">${{number_format($global->total_market_cap_usd)}}</a></strong>
                             <li>
-                                / 24h Vol: <strong><a href="/charts/">$9,470,158,812</a></strong>
-                                / BTC Dominance: <strong><a href="/charts/#dominance-percentage">48.5%</a></strong>
+                                / 24h Vol: <strong><a href="/">${{number_format($global->total_24h_volume_usd)}}</a></strong>
+                                / BTC Dominance: <strong><a href="/">{{$global->bitcoin_percentage_of_market_cap}}%</a></strong>
                             </li>
                         </ul>
                     </div>

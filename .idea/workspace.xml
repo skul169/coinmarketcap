@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4069a55b-fb2a-4de2-8ade-805d45b37241" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/currencies.blade.php" afterPath="$PROJECT_DIR$/resources/views/currencies.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/cc9bef6146d596eccf8fb29fb031ea43" afterPath="$PROJECT_DIR$/storage/framework/views/cc9bef6146d596eccf8fb29fb031ea43" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +19,7 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="0">
               <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="33" />
               <folding />
             </state>
@@ -34,49 +36,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="55" column="89" lean-forward="false" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="89" />
+            <state relative-caret-position="827">
+              <caret line="164" column="38" lean-forward="false" selection-start-line="164" selection-start-column="38" selection-end-line="164" selection-end-column="38" />
               <folding>
                 <element signature="e#39#67#0#PHP" expanded="true" />
                 <element signature="e#320#716#0#PHP" expanded="false" />
                 <element signature="e#719#857#0#PHP" expanded="false" />
                 <element signature="e#859#940#0#PHP" expanded="false" />
-                <element signature="e#1965#2241#0#PHP" expanded="false" />
-                <element signature="e#2244#3321#0#PHP" expanded="false" />
-                <marker date="1504369608578" expanded="true" signature="2354:2432" ph="SELECT sum(m... sestockprice" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/pragmarx/google2fa/src/Vendor/Laravel/ServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="currencies.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="157" column="53" lean-forward="false" selection-start-line="157" selection-start-column="53" selection-end-line="157" selection-end-column="53" />
-              <folding>
-                <element signature="e#4930#4996#0#HTML" expanded="true" />
-                <element signature="e#5174#5222#0#HTML" expanded="true" />
-                <element signature="e#5247#5599#0#HTML" expanded="true" />
-                <element signature="e#5637#5728#0#HTML" expanded="true" />
-                <element signature="e#8575#11045#0#HTML" expanded="false" />
-                <element signature="e#11062#13984#0#HTML" expanded="false" />
-                <element signature="e#12137#12159#0#HTML" expanded="true" />
-                <element signature="e#12601#12656#0#HTML" expanded="true" />
-                <element signature="e#14105#14111#0#HTML" expanded="true" />
+                <element signature="e#2148#2424#0#PHP" expanded="false" />
+                <element signature="e#2427#3504#0#PHP" expanded="false" />
+                <marker date="1504597933366" expanded="true" signature="2537:2615" ph="SELECT sum(m... sestockprice" />
               </folding>
             </state>
           </provider>
@@ -85,13 +57,32 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2329">
-              <caret line="222" column="22" lean-forward="true" selection-start-line="222" selection-start-column="22" selection-end-line="222" selection-end-column="22" />
+            <state relative-caret-position="391">
+              <caret line="23" column="26" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="23" selection-end-column="26" />
               <folding>
-                <element signature="e#1495#5746#0#HTML" expanded="false" />
-                <element signature="e#2051#5723#0#HTML" expanded="false" />
-                <element signature="e#6077#6607#0#HTML" expanded="false" />
-                <element signature="e#13884#13890#0#HTML" expanded="true" />
+                <element signature="e#1562#5813#0#HTML" expanded="false" />
+                <element signature="e#2118#5790#0#HTML" expanded="false" />
+                <element signature="e#6144#6674#0#HTML" expanded="false" />
+                <element signature="e#13889#13895#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="currencies.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+              <folding>
+                <element signature="e#4997#5063#0#HTML" expanded="true" />
+                <element signature="e#5241#5289#0#HTML" expanded="true" />
+                <element signature="e#5314#5666#0#HTML" expanded="true" />
+                <element signature="e#5704#5795#0#HTML" expanded="true" />
+                <element signature="e#8642#11112#0#HTML" expanded="false" />
+                <element signature="e#12204#12226#0#HTML" expanded="true" />
+                <element signature="e#12668#12723#0#HTML" expanded="true" />
+                <element signature="e#14172#14178#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,11 +159,11 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/userads/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/public/test.html" />
-        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/coinmarketcap.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/currencies.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
       </list>
     </option>
   </component>
@@ -302,12 +293,12 @@
       <workItem from="1504349936292" duration="5651000" />
       <workItem from="1504366637345" duration="3445000" />
       <workItem from="1504418660209" duration="1992000" />
-      <workItem from="1504589192239" duration="6541000" />
+      <workItem from="1504589192239" duration="6992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23519000" />
+    <option name="totallyTimeSpent" value="23970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -369,9 +360,9 @@
             <element signature="e#320#716#0#PHP" expanded="false" />
             <element signature="e#719#857#0#PHP" expanded="false" />
             <element signature="e#859#940#0#PHP" expanded="false" />
-            <element signature="e#1965#2241#0#PHP" expanded="false" />
-            <element signature="e#2244#3321#0#PHP" expanded="false" />
-            <marker date="1504369608578" expanded="true" signature="2354:2432" ph="SELECT sum(m... sestockprice" />
+            <element signature="e#2148#2424#0#PHP" expanded="false" />
+            <element signature="e#2427#3504#0#PHP" expanded="false" />
+            <marker date="1504597933366" expanded="true" signature="2537:2615" ph="SELECT sum(m... sestockprice" />
           </folding>
         </state>
       </provider>
@@ -389,15 +380,14 @@
         <state relative-caret-position="2533">
           <caret line="149" column="106" lean-forward="false" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="106" />
           <folding>
-            <element signature="e#4930#4996#0#HTML" expanded="true" />
-            <element signature="e#5174#5222#0#HTML" expanded="true" />
-            <element signature="e#5247#5599#0#HTML" expanded="true" />
-            <element signature="e#5637#5728#0#HTML" expanded="true" />
-            <element signature="e#8575#11045#0#HTML" expanded="false" />
-            <element signature="e#11062#13984#0#HTML" expanded="false" />
-            <element signature="e#12137#12159#0#HTML" expanded="true" />
-            <element signature="e#12601#12656#0#HTML" expanded="true" />
-            <element signature="e#14105#14111#0#HTML" expanded="true" />
+            <element signature="e#4997#5063#0#HTML" expanded="true" />
+            <element signature="e#5241#5289#0#HTML" expanded="true" />
+            <element signature="e#5314#5666#0#HTML" expanded="true" />
+            <element signature="e#5704#5795#0#HTML" expanded="true" />
+            <element signature="e#8642#11112#0#HTML" expanded="false" />
+            <element signature="e#12204#12226#0#HTML" expanded="true" />
+            <element signature="e#12668#12723#0#HTML" expanded="true" />
+            <element signature="e#14172#14178#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -407,10 +397,10 @@
         <state relative-caret-position="867">
           <caret line="51" column="58" lean-forward="true" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
           <folding>
-            <element signature="e#1495#5746#0#HTML" expanded="false" />
-            <element signature="e#2051#5723#0#HTML" expanded="false" />
-            <element signature="e#6077#6607#0#HTML" expanded="false" />
-            <element signature="e#13884#13890#0#HTML" expanded="true" />
+            <element signature="e#1562#5813#0#HTML" expanded="false" />
+            <element signature="e#2118#5790#0#HTML" expanded="false" />
+            <element signature="e#6144#6674#0#HTML" expanded="false" />
+            <element signature="e#13889#13895#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -444,15 +434,14 @@
         <state relative-caret-position="2533">
           <caret line="149" column="106" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="106" />
           <folding>
-            <element signature="e#4930#4996#0#HTML" expanded="true" />
-            <element signature="e#5174#5222#0#HTML" expanded="true" />
-            <element signature="e#5247#5599#0#HTML" expanded="true" />
-            <element signature="e#5637#5728#0#HTML" expanded="true" />
-            <element signature="e#8575#11045#0#HTML" expanded="false" />
-            <element signature="e#11062#13984#0#HTML" expanded="false" />
-            <element signature="e#12137#12159#0#HTML" expanded="true" />
-            <element signature="e#12601#12656#0#HTML" expanded="true" />
-            <element signature="e#14105#14111#0#HTML" expanded="true" />
+            <element signature="e#4997#5063#0#HTML" expanded="true" />
+            <element signature="e#5241#5289#0#HTML" expanded="true" />
+            <element signature="e#5314#5666#0#HTML" expanded="true" />
+            <element signature="e#5704#5795#0#HTML" expanded="true" />
+            <element signature="e#8642#11112#0#HTML" expanded="false" />
+            <element signature="e#12204#12226#0#HTML" expanded="true" />
+            <element signature="e#12668#12723#0#HTML" expanded="true" />
+            <element signature="e#14172#14178#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -462,10 +451,10 @@
         <state relative-caret-position="731">
           <caret line="43" column="69" lean-forward="false" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
           <folding>
-            <element signature="e#1495#5746#0#HTML" expanded="false" />
-            <element signature="e#2051#5723#0#HTML" expanded="false" />
-            <element signature="e#6077#6607#0#HTML" expanded="false" />
-            <element signature="e#13884#13890#0#HTML" expanded="true" />
+            <element signature="e#1562#5813#0#HTML" expanded="false" />
+            <element signature="e#2118#5790#0#HTML" expanded="false" />
+            <element signature="e#6144#6674#0#HTML" expanded="false" />
+            <element signature="e#13889#13895#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -479,9 +468,9 @@
             <element signature="e#320#716#0#PHP" expanded="false" />
             <element signature="e#719#857#0#PHP" expanded="false" />
             <element signature="e#859#940#0#PHP" expanded="false" />
-            <element signature="e#1965#2241#0#PHP" expanded="false" />
-            <element signature="e#2244#3321#0#PHP" expanded="false" />
-            <marker date="1504369608578" expanded="true" signature="2354:2432" ph="SELECT sum(m... sestockprice" />
+            <element signature="e#2148#2424#0#PHP" expanded="false" />
+            <element signature="e#2427#3504#0#PHP" expanded="false" />
+            <marker date="1504597933366" expanded="true" signature="2537:2615" ph="SELECT sum(m... sestockprice" />
           </folding>
         </state>
       </provider>
@@ -507,15 +496,14 @@
         <state relative-caret-position="2244">
           <caret line="132" column="42" lean-forward="false" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
           <folding>
-            <element signature="e#4930#4996#0#HTML" expanded="true" />
-            <element signature="e#5174#5222#0#HTML" expanded="true" />
-            <element signature="e#5247#5599#0#HTML" expanded="true" />
-            <element signature="e#5637#5728#0#HTML" expanded="true" />
-            <element signature="e#8575#11045#0#HTML" expanded="false" />
-            <element signature="e#11062#13984#0#HTML" expanded="false" />
-            <element signature="e#12137#12159#0#HTML" expanded="true" />
-            <element signature="e#12601#12656#0#HTML" expanded="true" />
-            <element signature="e#14105#14111#0#HTML" expanded="true" />
+            <element signature="e#4997#5063#0#HTML" expanded="true" />
+            <element signature="e#5241#5289#0#HTML" expanded="true" />
+            <element signature="e#5314#5666#0#HTML" expanded="true" />
+            <element signature="e#5704#5795#0#HTML" expanded="true" />
+            <element signature="e#8642#11112#0#HTML" expanded="false" />
+            <element signature="e#12204#12226#0#HTML" expanded="true" />
+            <element signature="e#12668#12723#0#HTML" expanded="true" />
+            <element signature="e#14172#14178#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -525,10 +513,10 @@
         <state relative-caret-position="493">
           <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="35" />
           <folding>
-            <element signature="e#1495#5746#0#HTML" expanded="false" />
-            <element signature="e#2051#5723#0#HTML" expanded="false" />
-            <element signature="e#6077#6607#0#HTML" expanded="false" />
-            <element signature="e#13884#13890#0#HTML" expanded="true" />
+            <element signature="e#1562#5813#0#HTML" expanded="false" />
+            <element signature="e#2118#5790#0#HTML" expanded="false" />
+            <element signature="e#6144#6674#0#HTML" expanded="false" />
+            <element signature="e#13889#13895#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -542,9 +530,9 @@
             <element signature="e#320#716#0#PHP" expanded="false" />
             <element signature="e#719#857#0#PHP" expanded="false" />
             <element signature="e#859#940#0#PHP" expanded="false" />
-            <element signature="e#1965#2241#0#PHP" expanded="false" />
-            <element signature="e#2244#3321#0#PHP" expanded="false" />
-            <marker date="1504369608578" expanded="true" signature="2354:2432" ph="SELECT sum(m... sestockprice" />
+            <element signature="e#2148#2424#0#PHP" expanded="false" />
+            <element signature="e#2427#3504#0#PHP" expanded="false" />
+            <marker date="1504597933366" expanded="true" signature="2537:2615" ph="SELECT sum(m... sestockprice" />
           </folding>
         </state>
       </provider>
@@ -574,9 +562,9 @@
             <element signature="e#320#716#0#PHP" expanded="false" />
             <element signature="e#719#857#0#PHP" expanded="false" />
             <element signature="e#859#940#0#PHP" expanded="false" />
-            <element signature="e#1965#2241#0#PHP" expanded="false" />
-            <element signature="e#2244#3321#0#PHP" expanded="false" />
-            <marker date="1504369608578" expanded="true" signature="2354:2432" ph="SELECT sum(m... sestockprice" />
+            <element signature="e#2148#2424#0#PHP" expanded="false" />
+            <element signature="e#2427#3504#0#PHP" expanded="false" />
+            <marker date="1504597933366" expanded="true" signature="2537:2615" ph="SELECT sum(m... sestockprice" />
           </folding>
         </state>
       </provider>
@@ -586,10 +574,10 @@
         <state relative-caret-position="119">
           <caret line="7" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
-            <element signature="e#1495#5746#0#HTML" expanded="false" />
-            <element signature="e#2051#5723#0#HTML" expanded="false" />
-            <element signature="e#6077#6607#0#HTML" expanded="false" />
-            <element signature="e#13884#13890#0#HTML" expanded="true" />
+            <element signature="e#1562#5813#0#HTML" expanded="false" />
+            <element signature="e#2118#5790#0#HTML" expanded="false" />
+            <element signature="e#6144#6674#0#HTML" expanded="false" />
+            <element signature="e#13889#13895#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -599,15 +587,14 @@
         <state relative-caret-position="1071">
           <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
           <folding>
-            <element signature="e#4930#4996#0#HTML" expanded="true" />
-            <element signature="e#5174#5222#0#HTML" expanded="true" />
-            <element signature="e#5247#5599#0#HTML" expanded="true" />
-            <element signature="e#5637#5728#0#HTML" expanded="true" />
-            <element signature="e#8575#11045#0#HTML" expanded="false" />
-            <element signature="e#11062#13984#0#HTML" expanded="false" />
-            <element signature="e#12137#12159#0#HTML" expanded="true" />
-            <element signature="e#12601#12656#0#HTML" expanded="true" />
-            <element signature="e#14105#14111#0#HTML" expanded="true" />
+            <element signature="e#4997#5063#0#HTML" expanded="true" />
+            <element signature="e#5241#5289#0#HTML" expanded="true" />
+            <element signature="e#5314#5666#0#HTML" expanded="true" />
+            <element signature="e#5704#5795#0#HTML" expanded="true" />
+            <element signature="e#8642#11112#0#HTML" expanded="false" />
+            <element signature="e#12204#12226#0#HTML" expanded="true" />
+            <element signature="e#12668#12723#0#HTML" expanded="true" />
+            <element signature="e#14172#14178#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -664,7 +651,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="0">
           <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="33" />
           <folding />
         </state>
@@ -684,30 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/pragmarx/google2fa/src/Vendor/Laravel/ServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="55" column="89" lean-forward="false" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="89" />
-          <folding>
-            <element signature="e#39#67#0#PHP" expanded="true" />
-            <element signature="e#320#716#0#PHP" expanded="false" />
-            <element signature="e#719#857#0#PHP" expanded="false" />
-            <element signature="e#859#940#0#PHP" expanded="false" />
-            <element signature="e#1965#2241#0#PHP" expanded="false" />
-            <element signature="e#2244#3321#0#PHP" expanded="false" />
-            <marker date="1504369608578" expanded="true" signature="2354:2432" ph="SELECT sum(m... sestockprice" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2171">
@@ -717,19 +680,6 @@
             <element signature="n#div#1;n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#14091#14097#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2329">
-          <caret line="222" column="22" lean-forward="true" selection-start-line="222" selection-start-column="22" selection-end-line="222" selection-end-column="22" />
-          <folding>
-            <element signature="e#1495#5746#0#HTML" expanded="false" />
-            <element signature="e#2051#5723#0#HTML" expanded="false" />
-            <element signature="e#6077#6607#0#HTML" expanded="false" />
-            <element signature="e#13884#13890#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -750,20 +700,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/pragmarx/google2fa/src/Vendor/Laravel/ServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="e#1562#5813#0#HTML" expanded="false" />
+            <element signature="e#2118#5790#0#HTML" expanded="false" />
+            <element signature="e#6144#6674#0#HTML" expanded="false" />
+            <element signature="e#13889#13895#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="157" column="53" lean-forward="false" selection-start-line="157" selection-start-column="53" selection-end-line="157" selection-end-column="53" />
+        <state relative-caret-position="289">
+          <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
           <folding>
-            <element signature="e#4930#4996#0#HTML" expanded="true" />
-            <element signature="e#5174#5222#0#HTML" expanded="true" />
-            <element signature="e#5247#5599#0#HTML" expanded="true" />
-            <element signature="e#5637#5728#0#HTML" expanded="true" />
-            <element signature="e#8575#11045#0#HTML" expanded="false" />
-            <element signature="e#11062#13984#0#HTML" expanded="false" />
-            <element signature="e#12137#12159#0#HTML" expanded="true" />
-            <element signature="e#12601#12656#0#HTML" expanded="true" />
-            <element signature="e#14105#14111#0#HTML" expanded="true" />
+            <element signature="e#4997#5063#0#HTML" expanded="true" />
+            <element signature="e#5241#5289#0#HTML" expanded="true" />
+            <element signature="e#5314#5666#0#HTML" expanded="true" />
+            <element signature="e#5704#5795#0#HTML" expanded="true" />
+            <element signature="e#8642#11112#0#HTML" expanded="false" />
+            <element signature="e#12204#12226#0#HTML" expanded="true" />
+            <element signature="e#12668#12723#0#HTML" expanded="true" />
+            <element signature="e#14172#14178#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="827">
+          <caret line="164" column="38" lean-forward="false" selection-start-line="164" selection-start-column="38" selection-end-line="164" selection-end-column="38" />
+          <folding>
+            <element signature="e#39#67#0#PHP" expanded="true" />
+            <element signature="e#320#716#0#PHP" expanded="false" />
+            <element signature="e#719#857#0#PHP" expanded="false" />
+            <element signature="e#859#940#0#PHP" expanded="false" />
+            <element signature="e#2148#2424#0#PHP" expanded="false" />
+            <element signature="e#2427#3504#0#PHP" expanded="false" />
+            <marker date="1504597933366" expanded="true" signature="2537:2615" ph="SELECT sum(m... sestockprice" />
           </folding>
         </state>
       </provider>
