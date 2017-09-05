@@ -18,7 +18,7 @@
     @yield('main-content')
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     @yield('inpage-script')
-    {{--<script src="https://stock.local/static/compressed/base.min.js?03648796"></script>--}}
+    <script src="https://stock.local/static/compressed/base.min.js?03648796"></script>
     {{--<script src="https://stock.local/static/compressed/currencies_main.min.js?7ec58358"></script>--}}
 </body>
 </html>

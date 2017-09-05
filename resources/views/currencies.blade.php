@@ -207,13 +207,9 @@
                             <li class="active"><a href="#charts" role="tab" data-toggle="tab"> <span
                                             class="glyphicon glyphicon-stats text-gray"></span> Charts </a></li>
                             <li><a href="#markets" role="tab" data-toggle="tab"><span
-                                            class="glyphicon glyphicon-transfer text-gray"></span> Markets </a></li>
+                                            class="glyphicon glyphicon-import text-gray"></span> Buy </a></li>
                             <li><a href="#social" role="tab" data-toggle="tab"><span
-                                            class="glyphicon glyphicon-globe text-gray"></span> Social </a></li>
-                            <li><a href="#tools" role="tab" data-toggle="tab"><span
-                                            class="glyphicon glyphicon-wrench text-gray"></span> Tools </a></li>
-                            <li><a href="#"><span
-                                            class="glyphicon glyphicon-calendar text-gray"></span> Historical Data </a></li>
+                                            class="glyphicon glyphicon-export text-gray"></span> Sell </a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 tab-content">
@@ -231,19 +227,21 @@
                         </div>
                         <div id="markets" class="tab-pane">
                             <div class="tab-header">
-                                <h2 class="pull-left">{{$coin_info->name}} Markets</h2><br>
+                                <div class="hidden-xs hidden-sm col-md-4 text-left">
+                                    <a href="http://b-eth.com/buy" target="_blank">
+                                        <div class="btn btn-primary"><span class="glyphicon glyphicon-flash"></span> Buy {{$coin_info->name}}</div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div id="social" class="tab-pane">
                             <div class="tab-header">
-                                <h2 class="pull-left">{{$coin_info->name}} Social Media Feeds</h2>
+                                <div class="hidden-xs hidden-sm col-md-4 text-left">
+                                    <a href="http://b-eth.com/sell" target="_blank">
+                                        <div class="btn btn-primary"><span class="glyphicon glyphicon-flash"></span> Sell {{$coin_info->name}}</div>
+                                    </a>
+                                </div>
                                 <div class="clear"></div>
-                            </div>
-                        </div>
-                        <div id="tools" class="tab-pane">
-                            <div class="tab-header">
-                                <h2 class="pull-left">Tools for {{$coin_info->name}}</h2>
-                                <div class="clear bottom-margin-1x"></div>
                             </div>
                         </div>
                     </div>
