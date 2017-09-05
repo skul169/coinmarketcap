@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4069a55b-fb2a-4de2-8ade-805d45b37241" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/coinmarketcap.blade.php" afterPath="$PROJECT_DIR$/resources/views/coinmarketcap.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/currencies.blade.php" afterPath="$PROJECT_DIR$/resources/views/currencies.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,18 +65,18 @@
       <file leaf-file-name="currencies.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="231" column="141" lean-forward="false" selection-start-line="231" selection-start-column="141" selection-end-line="231" selection-end-column="141" />
+            <state relative-caret-position="486">
+              <caret line="157" column="53" lean-forward="false" selection-start-line="157" selection-start-column="53" selection-end-line="157" selection-end-column="53" />
               <folding>
                 <element signature="e#4930#4996#0#HTML" expanded="true" />
                 <element signature="e#5174#5222#0#HTML" expanded="true" />
                 <element signature="e#5247#5599#0#HTML" expanded="true" />
                 <element signature="e#5637#5728#0#HTML" expanded="true" />
-                <element signature="e#6305#8153#0#HTML" expanded="false" />
-                <element signature="e#8170#10640#0#HTML" expanded="false" />
-                <element signature="e#11732#11754#0#HTML" expanded="true" />
-                <element signature="e#12196#12251#0#HTML" expanded="true" />
-                <element signature="e#13700#13706#0#HTML" expanded="true" />
+                <element signature="e#8575#11045#0#HTML" expanded="false" />
+                <element signature="e#11062#13984#0#HTML" expanded="false" />
+                <element signature="e#12137#12159#0#HTML" expanded="true" />
+                <element signature="e#12601#12656#0#HTML" expanded="true" />
+                <element signature="e#14105#14111#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,6 +149,7 @@
       <find>CryptoCurrency Market Capitalizations</find>
       <find>highcharts-graph</find>
       <find>Market</find>
+      <find>col-xs-6 col-sm-8 col-md-4 text-left</find>
     </findStrings>
     <replaceStrings>
       <replace>https://stock.local</replace>
@@ -301,12 +302,12 @@
       <workItem from="1504349936292" duration="5651000" />
       <workItem from="1504366637345" duration="3445000" />
       <workItem from="1504418660209" duration="1992000" />
-      <workItem from="1504589192239" duration="6084000" />
+      <workItem from="1504589192239" duration="6541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23062000" />
+    <option name="totallyTimeSpent" value="23519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -392,11 +393,11 @@
             <element signature="e#5174#5222#0#HTML" expanded="true" />
             <element signature="e#5247#5599#0#HTML" expanded="true" />
             <element signature="e#5637#5728#0#HTML" expanded="true" />
-            <element signature="e#6305#8153#0#HTML" expanded="false" />
-            <element signature="e#8170#10640#0#HTML" expanded="false" />
-            <element signature="e#11732#11754#0#HTML" expanded="true" />
-            <element signature="e#12196#12251#0#HTML" expanded="true" />
-            <element signature="e#13700#13706#0#HTML" expanded="true" />
+            <element signature="e#8575#11045#0#HTML" expanded="false" />
+            <element signature="e#11062#13984#0#HTML" expanded="false" />
+            <element signature="e#12137#12159#0#HTML" expanded="true" />
+            <element signature="e#12601#12656#0#HTML" expanded="true" />
+            <element signature="e#14105#14111#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -447,11 +448,11 @@
             <element signature="e#5174#5222#0#HTML" expanded="true" />
             <element signature="e#5247#5599#0#HTML" expanded="true" />
             <element signature="e#5637#5728#0#HTML" expanded="true" />
-            <element signature="e#6305#8153#0#HTML" expanded="false" />
-            <element signature="e#8170#10640#0#HTML" expanded="false" />
-            <element signature="e#11732#11754#0#HTML" expanded="true" />
-            <element signature="e#12196#12251#0#HTML" expanded="true" />
-            <element signature="e#13700#13706#0#HTML" expanded="true" />
+            <element signature="e#8575#11045#0#HTML" expanded="false" />
+            <element signature="e#11062#13984#0#HTML" expanded="false" />
+            <element signature="e#12137#12159#0#HTML" expanded="true" />
+            <element signature="e#12601#12656#0#HTML" expanded="true" />
+            <element signature="e#14105#14111#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -510,11 +511,11 @@
             <element signature="e#5174#5222#0#HTML" expanded="true" />
             <element signature="e#5247#5599#0#HTML" expanded="true" />
             <element signature="e#5637#5728#0#HTML" expanded="true" />
-            <element signature="e#6305#8153#0#HTML" expanded="false" />
-            <element signature="e#8170#10640#0#HTML" expanded="false" />
-            <element signature="e#11732#11754#0#HTML" expanded="true" />
-            <element signature="e#12196#12251#0#HTML" expanded="true" />
-            <element signature="e#13700#13706#0#HTML" expanded="true" />
+            <element signature="e#8575#11045#0#HTML" expanded="false" />
+            <element signature="e#11062#13984#0#HTML" expanded="false" />
+            <element signature="e#12137#12159#0#HTML" expanded="true" />
+            <element signature="e#12601#12656#0#HTML" expanded="true" />
+            <element signature="e#14105#14111#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -602,11 +603,11 @@
             <element signature="e#5174#5222#0#HTML" expanded="true" />
             <element signature="e#5247#5599#0#HTML" expanded="true" />
             <element signature="e#5637#5728#0#HTML" expanded="true" />
-            <element signature="e#6305#8153#0#HTML" expanded="false" />
-            <element signature="e#8170#10640#0#HTML" expanded="false" />
-            <element signature="e#11732#11754#0#HTML" expanded="true" />
-            <element signature="e#12196#12251#0#HTML" expanded="true" />
-            <element signature="e#13700#13706#0#HTML" expanded="true" />
+            <element signature="e#8575#11045#0#HTML" expanded="false" />
+            <element signature="e#11062#13984#0#HTML" expanded="false" />
+            <element signature="e#12137#12159#0#HTML" expanded="true" />
+            <element signature="e#12601#12656#0#HTML" expanded="true" />
+            <element signature="e#14105#14111#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -751,18 +752,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="231" column="141" lean-forward="false" selection-start-line="231" selection-start-column="141" selection-end-line="231" selection-end-column="141" />
+        <state relative-caret-position="486">
+          <caret line="157" column="53" lean-forward="false" selection-start-line="157" selection-start-column="53" selection-end-line="157" selection-end-column="53" />
           <folding>
             <element signature="e#4930#4996#0#HTML" expanded="true" />
             <element signature="e#5174#5222#0#HTML" expanded="true" />
             <element signature="e#5247#5599#0#HTML" expanded="true" />
             <element signature="e#5637#5728#0#HTML" expanded="true" />
-            <element signature="e#6305#8153#0#HTML" expanded="false" />
-            <element signature="e#8170#10640#0#HTML" expanded="false" />
-            <element signature="e#11732#11754#0#HTML" expanded="true" />
-            <element signature="e#12196#12251#0#HTML" expanded="true" />
-            <element signature="e#13700#13706#0#HTML" expanded="true" />
+            <element signature="e#8575#11045#0#HTML" expanded="false" />
+            <element signature="e#11062#13984#0#HTML" expanded="false" />
+            <element signature="e#12137#12159#0#HTML" expanded="true" />
+            <element signature="e#12601#12656#0#HTML" expanded="true" />
+            <element signature="e#14105#14111#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

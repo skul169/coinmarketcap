@@ -154,6 +154,13 @@
                         {{--</div>--}}
                         {{--</div>--}}
                     </div>
+                    <div class="hidden-xs hidden-sm col-md-4 text-left">
+                        <a href="http://b-eth.com/buy" target="_blank">
+                            <div class="btn btn-primary">
+                                <span class="glyphicon glyphicon-flash"></span> Buy instantly with credit card
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="row bottom-margin-2x">
                     <div class="col-xs-4 col-sm-4">
