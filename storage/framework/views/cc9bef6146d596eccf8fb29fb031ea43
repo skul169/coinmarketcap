@@ -45,13 +45,13 @@ Home
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="">
+                            <li <?php if(\Request::route()->getName() == 'index'): ?> class="active" <?php endif; ?>>
                                 <a href="/">Toplist</a>
                             </li>
-                            <li class="">
+                            <li <?php if(\Request::route()->getName() == 'topup'): ?> class="active" <?php endif; ?>>
                                 <a href="/topuplist">TopUp</a>
                             </li>
-                            <li class="">
+                            <li <?php if(\Request::route()->getName() == 'topdown'): ?> class="active" <?php endif; ?>>
                                 <a href="/topdownlist">TopDown</a>
                             </li>
                             <!--<li class="dropdown">-->

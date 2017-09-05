@@ -47,51 +47,15 @@ Home
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="">
+                            <li @if(\Request::route()->getName() == 'index') class="active" @endif>
                                 <a href="/">Toplist</a>
                             </li>
-                            <li class="">
+                            <li @if(\Request::route()->getName() == 'topup') class="active" @endif>
                                 <a href="/topuplist">TopUp</a>
                             </li>
-                            <li class="">
+                            <li @if(\Request::route()->getName() == 'topdown') class="active" @endif>
                                 <a href="/topdownlist">TopDown</a>
                             </li>
-                            <!--<li class="dropdown">-->
-                            <!--<a href="/" class="dropdown-toggle" data-toggle="dropdown">Market Cap <span-->
-                            <!--class="caret"></span></a>-->
-                            <!--<ul class="dropdown-menu" role="menu">-->
-                            <!--<li><a href="/">All</a></li>-->
-                            <!--<li><a href="/currencies/">Currencies</a></li>-->
-                            <!--<li><a href="/assets/">Assets</a></li>-->
-                            <!--</ul>-->
-                            <!--</li>-->
-                            <!--<li class="dropdown">-->
-                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Trade Volume <span-->
-                            <!--class="caret"></span></a>-->
-                            <!--<ul class="dropdown-menu" role="menu">-->
-                            <!--<li><a href="/currencies/volume/24-hour/">24 Hour Volume Rankings (Currency)</a></li>-->
-                            <!--<li><a href="/exchanges/volume/24-hour/">24 Hour Volume Rankings (Exchange)</a></li>-->
-                            <!--<li><a href="/currencies/volume/monthly/">Monthly Volume Rankings (Currency)</a></li>-->
-                            <!--</ul>-->
-                            <!--</li>-->
-                            <!--<li class="dropdown">-->
-                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Trending <span-->
-                            <!--class="caret"></span></a>-->
-                            <!--<ul class="dropdown-menu" role="menu">-->
-                            <!--<li><a href="/gainers-losers/">Gainers and Losers</a></li>-->
-                            <!--<li><a href="/new/">Recently Added</a></li>-->
-                            <!--</ul>-->
-                            <!--</li>-->
-
-                            <!--<li class="dropdown">-->
-                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <span class="caret"></span></a>-->
-                            <!--<ul class="dropdown-menu" role="menu">-->
-                            <!--<li><a href="/charts/">Global Charts</a></li>-->
-                            <!--<li><a href="/historical/">Historical Snapshots</a></li>-->
-                            <!--<li><a href="/calculator/">Currency Converter Calculator</a></li>-->
-                            <!--<li><a href="/widget/">Website Widgets</a></li>-->
-                            <!--</ul>-->
-                            <!--</li>-->
                         </ul>
                         <form action="/currencies/search/" class="navbar-form navbar-right" role="search">
                             <div class="form-group">

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4069a55b-fb2a-4de2-8ade-805d45b37241" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/cc9bef6146d596eccf8fb29fb031ea43" afterPath="$PROJECT_DIR$/storage/framework/views/cc9bef6146d596eccf8fb29fb031ea43" />
     </list>
@@ -37,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="70" column="47" lean-forward="false" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+            <state relative-caret-position="476">
+              <caret line="62" column="53" lean-forward="false" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="53" />
               <folding>
                 <element signature="e#39#67#0#PHP" expanded="true" />
                 <element signature="e#320#716#0#PHP" expanded="false" />
@@ -55,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="56" column="53" lean-forward="false" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+            <state relative-caret-position="150">
+              <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -114,8 +111,8 @@
       <find>Market</find>
       <find>col-xs-6 col-sm-8 col-md-4 text-left</find>
       <find>stock.local</find>
-      <find>EvtPushOD</find>
       <find>collapse navbar-collapse</find>
+      <find>EvtPushOD</find>
     </findStrings>
     <replaceStrings>
       <replace>https://stock.local</replace>
@@ -138,8 +135,8 @@
         <option value="$PROJECT_DIR$/resources/views/currencies.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/coinmarketcap.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
       </list>
     </option>
   </component>
@@ -271,12 +268,12 @@
       <workItem from="1504418660209" duration="1992000" />
       <workItem from="1504589192239" duration="7581000" />
       <workItem from="1504619736150" duration="515000" />
-      <workItem from="1504621450008" duration="1590000" />
+      <workItem from="1504621450008" duration="1789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26664000" />
+    <option name="totallyTimeSpent" value="26863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -732,18 +729,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="56" column="53" lean-forward="false" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="70" column="47" lean-forward="false" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+        <state relative-caret-position="476">
+          <caret line="62" column="53" lean-forward="false" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="53" />
           <folding>
             <element signature="e#39#67#0#PHP" expanded="true" />
             <element signature="e#320#716#0#PHP" expanded="false" />
@@ -753,6 +742,14 @@
             <element signature="e#3180#4257#0#PHP" expanded="false" />
             <marker date="1504623144879" expanded="true" signature="3290:3368" ph="SELECT sum(m... sestockprice" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
