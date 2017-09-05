@@ -39,7 +39,6 @@ class IndexController extends \Illuminate\Routing\Controller {
 	public function index()
 	{
 
-
 		// $gets = \DB::table('stock_info')->get();
   //           foreach ($gets as $k) {
   //             $up = \DB::statement("UPDATE sestockprice SET sortOrder = ".$k->sortOrder." WHERE symbol = '".$k->symbol."'");
@@ -60,6 +59,19 @@ class IndexController extends \Illuminate\Routing\Controller {
 
         $list_all = file_get_contents('https://api.coinmarketcap.com/v1/ticker/?limit=100');
         $list_all = json_decode($list_all);
+
+        if (\Request::route()->getName() == 'topdown') {
+            //top down
+            usort($list_all, function($a, $b) {
+                return $a->percent_change_24h > $b->percent_change_24h;
+            });
+        } elseif (\Request::route()->getName() == 'topup') {
+            //top up
+            usort($list_all, function($a, $b) {
+                return $b->percent_change_24h > $a->percent_change_24h;
+            });
+        }
+
         $global->total_market_cap_usd = 0;
         $global->total_24h_volume_usd = 0;
         $index_name = '24h_volume_usd';

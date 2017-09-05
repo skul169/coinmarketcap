@@ -9,12 +9,14 @@
   | and give it the controller to call when that URI is requested.
   |
  */
-Route::get('/', 'IndexController@index');
+Route::get('/', 'IndexController@index')->name('index');
+Route::get('topuplist', 'IndexController@index')->name('topup');
+Route::get('topdownlist', 'IndexController@index')->name('topdown');
+
 Route::get('/currencies/{coinname}', 'IndexController@currencies');
 
 Route::get('topup', 'IndexController@topup');
 Route::get('topdown', 'IndexController@topdown');
-
 
 
 Route::get('devi', 'IndexController@indexdev');
