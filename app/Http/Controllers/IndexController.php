@@ -60,6 +60,13 @@ class IndexController extends \Illuminate\Routing\Controller {
 
         $list_all = file_get_contents('https://api.coinmarketcap.com/v1/ticker/?limit=100');
         $list_all = json_decode($list_all);
+        $global->total_market_cap_usd = 0;
+        $global->total_24h_volume_usd = 0;
+        $index_name = '24h_volume_usd';
+        foreach ($list_all as $coin) {
+            $global->total_market_cap_usd += $coin->market_cap_usd;
+            $global->total_24h_volume_usd += $coin->$index_name;
+        }
 
 		// Render into template
 		return view('index')->with('allsymbol', $allsymbol)
@@ -156,6 +163,16 @@ class IndexController extends \Illuminate\Routing\Controller {
 
         $result = file_get_contents('https://graphs.coinmarketcap.com/currencies/'. $coinname .'/');
         $result = json_decode($result);
+
+        $list_all = file_get_contents('https://api.coinmarketcap.com/v1/ticker/?limit=100');
+        $list_all = json_decode($list_all);
+        $global->total_market_cap_usd = 0;
+        $global->total_24h_volume_usd = 0;
+        $index_name = '24h_volume_usd';
+        foreach ($list_all as $coin) {
+            $global->total_market_cap_usd += $coin->market_cap_usd;
+            $global->total_24h_volume_usd += $coin->$index_name;
+        }
 
         // Render into template
         return view('currencies')->with('coinname', $coinname)
