@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4069a55b-fb2a-4de2-8ade-805d45b37241" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/currencies.blade.php" afterPath="$PROJECT_DIR$/resources/views/currencies.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/cc9bef6146d596eccf8fb29fb031ea43" afterPath="$PROJECT_DIR$/storage/framework/views/cc9bef6146d596eccf8fb29fb031ea43" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/coinmarketcap.blade.php" afterPath="$PROJECT_DIR$/resources/views/coinmarketcap.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +17,7 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="204">
               <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="33" />
               <folding />
             </state>
@@ -36,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="164" column="38" lean-forward="false" selection-start-line="164" selection-start-column="38" selection-end-line="164" selection-end-column="38" />
+            <state relative-caret-position="674">
+              <caret line="160" column="62" lean-forward="true" selection-start-line="160" selection-start-column="62" selection-end-line="160" selection-end-column="62" />
               <folding>
                 <element signature="e#39#67#0#PHP" expanded="true" />
                 <element signature="e#320#716#0#PHP" expanded="false" />
@@ -58,13 +56,8 @@
         <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="23" selection-end-column="26" />
-              <folding>
-                <element signature="e#1562#5813#0#HTML" expanded="false" />
-                <element signature="e#2118#5790#0#HTML" expanded="false" />
-                <element signature="e#6144#6674#0#HTML" expanded="false" />
-                <element signature="e#13889#13895#0#HTML" expanded="true" />
-              </folding>
+              <caret line="23" column="26" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="23" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,18 +65,9 @@
       <file leaf-file-name="currencies.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="1462">
               <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-              <folding>
-                <element signature="e#4997#5063#0#HTML" expanded="true" />
-                <element signature="e#5241#5289#0#HTML" expanded="true" />
-                <element signature="e#5314#5666#0#HTML" expanded="true" />
-                <element signature="e#5704#5795#0#HTML" expanded="true" />
-                <element signature="e#8642#11112#0#HTML" expanded="false" />
-                <element signature="e#12204#12226#0#HTML" expanded="true" />
-                <element signature="e#12668#12723#0#HTML" expanded="true" />
-                <element signature="e#14172#14178#0#HTML" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,33 +76,18 @@
         <entry file="file://$PROJECT_DIR$/resources/views/appindex.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="31" />
+              <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coinmarketcap.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="coinmarketcap.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/coinmarketcap.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="74" />
+              <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2171">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="247" selection-end-column="6" />
-              <folding>
-                <element signature="n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#14091#14097#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -141,12 +110,14 @@
       <find>highcharts-graph</find>
       <find>Market</find>
       <find>col-xs-6 col-sm-8 col-md-4 text-left</find>
+      <find>stock.local</find>
     </findStrings>
     <replaceStrings>
       <replace>https://stock.local</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\truon\project\adm_opbtcstock\resources</dir>
+      <dir>C:\Users\truon\project\adm_opbtcstock</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -160,10 +131,10 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/userads/edit.blade.php" />
         <option value="$PROJECT_DIR$/public/test.html" />
-        <option value="$PROJECT_DIR$/resources/views/coinmarketcap.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/currencies.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/resources/views/coinmarketcap.blade.php" />
       </list>
     </option>
   </component>
@@ -201,8 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,6 +222,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,12 +264,13 @@
       <workItem from="1504349936292" duration="5651000" />
       <workItem from="1504366637345" duration="3445000" />
       <workItem from="1504418660209" duration="1992000" />
-      <workItem from="1504589192239" duration="6992000" />
+      <workItem from="1504589192239" duration="7581000" />
+      <workItem from="1504619736150" duration="306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23970000" />
+    <option name="totallyTimeSpent" value="24865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -351,6 +323,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="23" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/appindex.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/coinmarketcap.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="247" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="164" column="38" lean-forward="false" selection-start-line="164" selection-start-column="38" selection-end-line="164" selection-end-column="38" />
+          <folding>
+            <element signature="e#39#67#0#PHP" expanded="true" />
+            <element signature="e#320#716#0#PHP" expanded="false" />
+            <element signature="e#719#857#0#PHP" expanded="false" />
+            <element signature="e#859#940#0#PHP" expanded="false" />
+            <element signature="e#2148#2424#0#PHP" expanded="false" />
+            <element signature="e#2427#3504#0#PHP" expanded="false" />
+            <marker date="1504597933366" expanded="true" signature="2537:2615" ph="SELECT sum(m... sestockprice" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3791">
+          <caret line="235" column="39" lean-forward="false" selection-start-line="235" selection-start-column="33" selection-end-line="235" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -371,7 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -379,16 +422,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2533">
           <caret line="149" column="106" lean-forward="false" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="106" />
-          <folding>
-            <element signature="e#4997#5063#0#HTML" expanded="true" />
-            <element signature="e#5241#5289#0#HTML" expanded="true" />
-            <element signature="e#5314#5666#0#HTML" expanded="true" />
-            <element signature="e#5704#5795#0#HTML" expanded="true" />
-            <element signature="e#8642#11112#0#HTML" expanded="false" />
-            <element signature="e#12204#12226#0#HTML" expanded="true" />
-            <element signature="e#12668#12723#0#HTML" expanded="true" />
-            <element signature="e#14172#14178#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -396,12 +430,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="58" lean-forward="true" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
-          <folding>
-            <element signature="e#1562#5813#0#HTML" expanded="false" />
-            <element signature="e#2118#5790#0#HTML" expanded="false" />
-            <element signature="e#6144#6674#0#HTML" expanded="false" />
-            <element signature="e#13889#13895#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -425,7 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -433,16 +461,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2533">
           <caret line="149" column="106" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="106" />
-          <folding>
-            <element signature="e#4997#5063#0#HTML" expanded="true" />
-            <element signature="e#5241#5289#0#HTML" expanded="true" />
-            <element signature="e#5314#5666#0#HTML" expanded="true" />
-            <element signature="e#5704#5795#0#HTML" expanded="true" />
-            <element signature="e#8642#11112#0#HTML" expanded="false" />
-            <element signature="e#12204#12226#0#HTML" expanded="true" />
-            <element signature="e#12668#12723#0#HTML" expanded="true" />
-            <element signature="e#14172#14178#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -450,12 +469,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="69" lean-forward="false" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
-          <folding>
-            <element signature="e#1562#5813#0#HTML" expanded="false" />
-            <element signature="e#2118#5790#0#HTML" expanded="false" />
-            <element signature="e#6144#6674#0#HTML" expanded="false" />
-            <element signature="e#13889#13895#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -495,16 +509,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
           <caret line="132" column="42" lean-forward="false" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
-          <folding>
-            <element signature="e#4997#5063#0#HTML" expanded="true" />
-            <element signature="e#5241#5289#0#HTML" expanded="true" />
-            <element signature="e#5314#5666#0#HTML" expanded="true" />
-            <element signature="e#5704#5795#0#HTML" expanded="true" />
-            <element signature="e#8642#11112#0#HTML" expanded="false" />
-            <element signature="e#12204#12226#0#HTML" expanded="true" />
-            <element signature="e#12668#12723#0#HTML" expanded="true" />
-            <element signature="e#14172#14178#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -512,12 +517,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="35" />
-          <folding>
-            <element signature="e#1562#5813#0#HTML" expanded="false" />
-            <element signature="e#2118#5790#0#HTML" expanded="false" />
-            <element signature="e#6144#6674#0#HTML" expanded="false" />
-            <element signature="e#13889#13895#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -573,12 +573,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="e#1562#5813#0#HTML" expanded="false" />
-            <element signature="e#2118#5790#0#HTML" expanded="false" />
-            <element signature="e#6144#6674#0#HTML" expanded="false" />
-            <element signature="e#13889#13895#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -586,16 +581,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-          <folding>
-            <element signature="e#4997#5063#0#HTML" expanded="true" />
-            <element signature="e#5241#5289#0#HTML" expanded="true" />
-            <element signature="e#5314#5666#0#HTML" expanded="true" />
-            <element signature="e#5704#5795#0#HTML" expanded="true" />
-            <element signature="e#8642#11112#0#HTML" expanded="false" />
-            <element signature="e#12204#12226#0#HTML" expanded="true" />
-            <element signature="e#12668#12723#0#HTML" expanded="true" />
-            <element signature="e#14172#14178#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -651,7 +637,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="204">
           <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="33" />
           <folding />
         </state>
@@ -673,29 +659,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2171">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="247" selection-end-column="6" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#nav#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#14091#14097#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="247" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/appindex.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/coinmarketcap.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="74" />
+          <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -704,44 +677,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#1562#5813#0#HTML" expanded="false" />
-            <element signature="e#2118#5790#0#HTML" expanded="false" />
-            <element signature="e#6144#6674#0#HTML" expanded="false" />
-            <element signature="e#13889#13895#0#HTML" expanded="true" />
-          </folding>
+          <caret line="23" column="26" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="23" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="1462">
           <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-          <folding>
-            <element signature="e#4997#5063#0#HTML" expanded="true" />
-            <element signature="e#5241#5289#0#HTML" expanded="true" />
-            <element signature="e#5314#5666#0#HTML" expanded="true" />
-            <element signature="e#5704#5795#0#HTML" expanded="true" />
-            <element signature="e#8642#11112#0#HTML" expanded="false" />
-            <element signature="e#12204#12226#0#HTML" expanded="true" />
-            <element signature="e#12668#12723#0#HTML" expanded="true" />
-            <element signature="e#14172#14178#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="164" column="38" lean-forward="false" selection-start-line="164" selection-start-column="38" selection-end-line="164" selection-end-column="38" />
+        <state relative-caret-position="674">
+          <caret line="160" column="62" lean-forward="true" selection-start-line="160" selection-start-column="62" selection-end-line="160" selection-end-column="62" />
           <folding>
             <element signature="e#39#67#0#PHP" expanded="true" />
             <element signature="e#320#716#0#PHP" expanded="false" />
@@ -751,6 +709,14 @@
             <element signature="e#2427#3504#0#PHP" expanded="false" />
             <marker date="1504597933366" expanded="true" signature="2537:2615" ph="SELECT sum(m... sestockprice" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/coinmarketcap.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
