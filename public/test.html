@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <link href="https://stock.local/static/compressed/base.min.css?da54f2db" rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon" href="https://stock.local/static/img/CoinMarketCap.png">
+
+</head>
+<body>
+<div id="top-nav-outer-container" role="navigation">
+    <div class="row">
+        <div id="top-nav-inner-container" class="container">
+            <div class="hidden-xs col-sm-3">
+                <div id="global-stats-counts" class="small"></div>
+            </div>
+            <div class="col-xs-12 col-sm-7">
+                <div id="global-stats-values" class="small">
+                    <ul class="list-inline stat-counters">
+                        Market Cap: <strong><a href="/charts/">$138,411,545,071</a></strong>
+                        <li>
+                            / 24h Vol: <strong><a href="/charts/">$9,470,158,812</a></strong>
+                            / BTC Dominance: <strong><a href="/charts/#dominance-percentage">48.5%</a></strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hidden-xs col-sm-2 text-right">
+                <div id="twitter-follow" class="pull-right">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+            <h1 id="title"><a href="/">CryptoCurrency Market Capitalizations</a></h1>
+            <hr/>
+            <nav id="nav-main" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <!--<li class="dropdown">-->
+                            <!--<a href="/" class="dropdown-toggle" data-toggle="dropdown">Market Cap <span-->
+                                    <!--class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu" role="menu">-->
+                                <!--<li><a href="/">All</a></li>-->
+                                <!--<li><a href="/currencies/">Currencies</a></li>-->
+                                <!--<li><a href="/assets/">Assets</a></li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li class="dropdown">-->
+                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Trade Volume <span-->
+                                    <!--class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu" role="menu">-->
+                                <!--<li><a href="/currencies/volume/24-hour/">24 Hour Volume Rankings (Currency)</a></li>-->
+                                <!--<li><a href="/exchanges/volume/24-hour/">24 Hour Volume Rankings (Exchange)</a></li>-->
+                                <!--<li><a href="/currencies/volume/monthly/">Monthly Volume Rankings (Currency)</a></li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li class="dropdown">-->
+                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Trending <span-->
+                                    <!--class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu" role="menu">-->
+                                <!--<li><a href="/gainers-losers/">Gainers and Losers</a></li>-->
+                                <!--<li><a href="/new/">Recently Added</a></li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+
+                        <!--<li class="dropdown">-->
+                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <span class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu" role="menu">-->
+                                <!--<li><a href="/charts/">Global Charts</a></li>-->
+                                <!--<li><a href="/historical/">Historical Snapshots</a></li>-->
+                                <!--<li><a href="/calculator/">Currency Converter Calculator</a></li>-->
+                                <!--<li><a href="/widget/">Website Widgets</a></li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                    </ul>
+                    <form action="/currencies/search/" class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" id="quick-search-box" class="form-control js-quick-search"
+                                   placeholder="Search Currencies" name="q">
+                            <button class="btn btn-primary hidden-sm hidden-md hidden-lg" type="submit"><i
+                                    class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                        <button class="btn btn-primary hidden-xs" type="submit"><i
+                                class="glyphicon glyphicon-search"></i></button>
+                    </form>
+                    <div class="bottom-margin-1x hidden-sm hidden-md hidden-lg"></div>
+                </div>
+            </nav>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="hidden-xs hidden-sm col-md-4">
+                            <ul id="category-tabs" class="nav nav-tabs text-left" role="tablist">
+                                <li class="active">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"> All <span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="/">Top 100</a></li>
+                                        <li><a href="/">Full List</a></li>
+                                    </ul>
+                                </li>
+                                <!--<li>-->
+                                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Currencies <span-->
+                                            <!--class="caret"></span></a>-->
+                                    <!--<ul class="dropdown-menu" role="menu">-->
+                                        <!--<li><a href="/currencies/">Top 100</a></li>-->
+                                        <!--<li><a href="/currencies/views/all/">Full List</a></li>-->
+                                        <!--<li class="divider"></li>-->
+                                        <!--<li><a href="/currencies/">Market Cap by Circulating Supply</a></li>-->
+                                        <!--<li><a href="/currencies/views/market-cap-by-total-supply/">Market Cap by Total-->
+                                            <!--Supply</a></li>-->
+                                        <!--<li><a href="/currencies/views/filter-non-mineable/">Filter Non-Mineable</a>-->
+                                        <!--</li>-->
+                                        <!--<li><a href="/currencies/views/filter-premined/">Filter Premined</a></li>-->
+                                        <!--<li><a href="/currencies/views/filter-non-mineable-and-premined/">Filter-->
+                                            <!--Non-Mineable and Premined</a></li>-->
+                                    <!--</ul>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Assets <span-->
+                                            <!--class="caret"></span> </a>-->
+                                    <!--<ul class="dropdown-menu" role="menu">-->
+                                        <!--<li><a href="/assets/">Top 100</a></li>-->
+                                        <!--<li><a href="/assets/views/all/">Full List</a></li>-->
+                                        <!--<li class="divider"></li>-->
+                                        <!--<li><a href="/assets/">Market Cap by Circulating Supply</a></li>-->
+                                        <!--<li><a href="/assets/views/market-cap-by-total-supply/">Market Cap by Total-->
+                                            <!--Supply</a></li>-->
+                                    <!--</ul>-->
+                                <!--</li>-->
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-4 col-md-4 text-left">
+                            <div id="currency-switch" class="btn-group"></div>
+                        </div>
+                        <div class="col-xs-8 col-md-4 text-right">
+                            <div class="clear"></div>
+                            <!--<div class="pull-right">-->
+                            <!--<ul class="pagination top-paginator">-->
+                            <!--<li><a href="2">Next 100 &rarr;</a></li>-->
+                            <!--<li><a href="/all/views/all/">View All</a></li>-->
+                            <!--</ul>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <table class="table" id="currencies">
+                        <thead>
+                        <tr>
+                            <th class="text-center">#</th>
+                            <th id="th-name" class="sortable">Name</th>
+
+                            <th id="th-marketcap" class="sortable text-right">Market Cap</th>
+                            <th id="th-price" class="sortable text-right">Price</th>
+                            <th id="th-totalsupply" class="sortable text-right"
+                                title="The number of coins in existence available to the public">Circulating Supply
+                            </th>
+                            <th id="th-volume" class="sortable text-right">Volume (24h)</th>
+                            <th id="th-change" class="sortable text-right">% Change (24h)</th>
+                            <th id="th-marketcap-graph">Price Graph (7d)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr id="id-bitcoin" class="">
+                            <td class="text-center">
+                                1
+                            </td>
+                            <td class="no-wrap currency-name">
+                                <img src="https://files.coinmarketcap.com/static/img/coins/16x16/bitcoin.png"
+                                     class="currency-logo" alt="Bitcoin">
+                                <a href="/currencies/bitcoin/">Bitcoin</a>
+                            </td>
+
+                            <td class="no-wrap market-cap text-right" data-usd="67531518889.4" data-btc="16544787.0">
+
+                                $67,531,518,889
+
+                            </td>
+                            <td class="no-wrap text-right">
+                                <a href="/currencies/bitcoin/#markets" class="price" data-usd="4081.74" data-btc="1.0">$4081.74</a>
+                            </td>
+                            <td class="no-wrap text-right">
+                                <a href="http://blockchain.info" target="_blank" data-supply="16544787.0">
+
+                                    16,544,787
+                                    BTC
+                                </a>
+
+
+                            </td>
+                            <td class="no-wrap text-right">
+                                <a href="/currencies/bitcoin/#markets" class="volume" data-usd="3343570000.0"
+                                   data-btc="804598.0">$3,343,570,000</a>
+                            </td>
+
+                            <td class="no-wrap percent-24h  negative_change text-right" data-usd="-9.97"
+                                data-btc="0.00">-9.97%
+                            </td>
+
+                            <td><a href="/currencies/bitcoin/#charts"><img class="sparkline" alt="sparkline"
+                                                                           src="https://files.coinmarketcap.com/generated/sparklines/1.png"></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="pull-right">
+                        <!--<ul class="pagination bottom-paginator">-->
+                        <!--<li><a href="2">Next 100 &rarr;</a></li>-->
+                        <!--<li><a href="/all/views/all/">View All</a></li>-->
+                        <!--</ul>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center" id="total_market_cap">
+                <strong>Total Market Cap:
+                    <span id="total-marketcap" data-usd="138,802,680,544" data-btc="33,695,354">
+                        $138,802,680,544
+                    </span>
+                </strong>
+            </div>
+            <hr/>
+            <div id="footer" class="row">
+                <div class="col-xs-12 col-md-6">&copy; 2017 TotalCoinMarket
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="static_domain" data-staticdomain="files.coinmarketcap.com"></div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://stock.local/static/compressed/base.min.js?03648796"></script>
+    <script src="https://stock.local/static/compressed/currencies_main.min.js?7ec58358"></script>
+</body>
+</html>
