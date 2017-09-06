@@ -65,6 +65,32 @@
             }]
         });
     </script>
+
+    <script>
+        var coin_id = '{{$coin_info->tokens[1]}}';
+        var url = 'http://socket.coincap.io';
+        var socket = io(url, {
+            'secure': true,
+            'reconnect': true,
+            'reconnection delay': 5000,
+            'max reconnection attempts': 10
+        });
+
+        socket.on('trades', function (tradeMsg) {
+            if (tradeMsg.message.coin == coin_id) {
+                $("#market_cap_id").html("$" + formatNumber(tradeMsg.message.msg.mktcap));
+                $("#quote_price").html("$" + formatNumber(tradeMsg.message.msg.price));
+                $("#supply_id").html(formatNumber(tradeMsg.message.msg.supply) + " " + tradeMsg.message.msg.short);
+                $("#volumn_24h_id").html("$" + formatNumber(tradeMsg.message.msg.usdVolume));
+                $("#quote_percent_change").html(' (' + tradeMsg.message.msg.cap24hrChange + '%)');
+                if (tradeMsg.message.msg.cap24hrChange >= 0) {
+                    $("#quote_percent_change").removeClass('negative_change').addClass('positive_change');
+                } else {
+                    $("#quote_percent_change").removeClass('positive_change').addClass('negative_change');
+                }
+            }
+        });
+    </script>
 @endsection
 
 
@@ -139,7 +165,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-8 col-md-4 text-left">
                         <span class="text-large" id="quote_price">${{$coin_detail->price_usd}}</span>
-                        <span class="text-large @if($coin_detail->percent_change_24h < 0)negative_change @else positive_change @endif ">({{$coin_detail->percent_change_24h}}%)</span>
+                        <span id="quote_percent_change" class="text-large @if($coin_detail->percent_change_24h < 0)negative_change @else positive_change @endif ">({{$coin_detail->percent_change_24h}}%)</span>
                         <br>
                         <small class="text-gray">{{$coin_detail->price_btc}} BTC</small>
                         <small class="@if($coin_detail->percent_change_1h < 0) negative_change @else positive_change @endif"> ({{$coin_detail->percent_change_1h}}%)</small>
@@ -215,7 +241,7 @@
                                 <h3>Market Cap</h3>
                             </div>
                             <div class="coin-summary-item-detail">
-                                ${{number_format($coin_detail->market_cap_usd)}} <br>
+                                <a id="market_cap_id">${{number_format($coin_detail->market_cap_usd)}}</a><br>
                                 <span class="text-gray">{{number_format($coin_detail->market_cap_usd/($coin_detail->price_usd/$coin_detail->price_btc))}} BTC</span> <br>
                             </div>
                         </div>
@@ -226,7 +252,7 @@
                             </div>
                             <div class="coin-summary-item-detail">
                                 <?php $index_name = '24h_volume_usd'; ?>
-                                ${{number_format($coin_detail->$index_name)}}<br>
+                                <a id="volumn_24h_id">${{number_format($coin_detail->$index_name)}}</a><br>
                                 <span class="text-gray">{{number_format($coin_detail->$index_name/($coin_detail->price_usd/$coin_detail->price_btc))}} BTC</span>
 
                             </div>
@@ -239,7 +265,7 @@
                                 <h3>Circulating Supply</h3>
                             </div>
                             <div class="coin-summary-item-detail">
-                                {{number_format($coin_detail->total_supply)}} BCH
+                                <a id="supply_id">{{number_format($coin_detail->total_supply)}} {{$coin_info->tokens[1]}}</a>
                             </div>
                         </div>
                         <div class="coin-summary-item col-xs-6  col-md-3 ">
@@ -247,7 +273,7 @@
                                 <h3>Max Supply</h3>
                             </div>
                             <div class="coin-summary-item-detail">
-                                21,000,000 BCH
+                                21,000,000 {{$coin_info->tokens[1]}}
                             </div>
                         </div>
                     </div>

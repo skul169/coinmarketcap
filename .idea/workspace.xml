@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4069a55b-fb2a-4de2-8ade-805d45b37241" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/coinmarketcap.blade.php" afterPath="$PROJECT_DIR$/resources/views/coinmarketcap.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/cc9bef6146d596eccf8fb29fb031ea43" afterPath="$PROJECT_DIR$/storage/framework/views/cc9bef6146d596eccf8fb29fb031ea43" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/currencies.blade.php" afterPath="$PROJECT_DIR$/resources/views/currencies.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,22 +51,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+            <state relative-caret-position="-1037">
+              <caret line="20" column="70" lean-forward="false" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="currencies.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="currencies.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="405">
+              <caret line="275" column="68" lean-forward="false" selection-start-line="275" selection-start-column="68" selection-end-line="275" selection-end-column="68" />
+              <folding>
+                <element signature="e#3331#4539#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,7 +132,10 @@
       <find>socket</find>
       <find>id-</find>
       <find>price</find>
+      <find>quote_price</find>
+      <find>Market Cap</find>
       <find>_blank</find>
+      <find>supply</find>
     </findStrings>
     <replaceStrings>
       <replace>https://stock.local</replace>
@@ -158,11 +159,11 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/public/config_buy_sell.json" />
-        <option value="$PROJECT_DIR$/resources/views/currencies.blade.php" />
         <option value="$PROJECT_DIR$/public/config.json" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/resources/views/coinmarketcap.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/currencies.blade.php" />
       </list>
     </option>
   </component>
@@ -283,12 +284,12 @@
       <workItem from="1504619736150" duration="515000" />
       <workItem from="1504621450008" duration="4435000" />
       <workItem from="1504661737347" duration="5826000" />
-      <workItem from="1504705986976" duration="4382000" />
+      <workItem from="1504705986976" duration="5693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39717000" />
+    <option name="totallyTimeSpent" value="41028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -329,7 +330,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
           <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#3331#4539#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -415,7 +418,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2533">
           <caret line="149" column="106" lean-forward="false" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="106" />
-          <folding />
+          <folding>
+            <element signature="e#3331#4539#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -454,7 +459,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2533">
           <caret line="149" column="106" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="106" />
-          <folding />
+          <folding>
+            <element signature="e#3331#4539#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -502,7 +509,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
           <caret line="132" column="42" lean-forward="false" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="e#3331#4539#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -574,7 +583,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#3331#4539#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -739,14 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/coinmarketcap.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -757,9 +760,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+        <state relative-caret-position="-1037">
+          <caret line="20" column="70" lean-forward="false" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/currencies.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="275" column="68" lean-forward="false" selection-start-line="275" selection-start-column="68" selection-end-line="275" selection-end-column="68" />
+          <folding>
+            <element signature="e#3331#4539#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
