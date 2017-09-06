@@ -186,11 +186,15 @@ class IndexController extends \Illuminate\Routing\Controller {
             $global->total_24h_volume_usd += $coin->$index_name;
         }
 
+        $json_config = file_get_contents(DOCROOT . '/config.json');
+        $json_config = json_decode($json_config);
+
         // Render into template
         return view('currencies')->with('coinname', $coinname)
             ->with('data_json' , json_encode($result->price_usd))
             ->with('coin_info', $cache_result[$coinname])
             ->with('coin_detail', $coin_detail)
-            ->with('global', $global);
+            ->with('global', $global)
+            ->with('json_config', $json_config);
     }
 }

@@ -164,6 +164,50 @@
                 </div>
                 <div class="row bottom-margin-2x">
                     <div class="col-xs-4 col-sm-4">
+                        <ul class="list-unstyled">
+                            @if(isset($json_config->$coinname->website))
+                                <li>
+                                    <span class="glyphicon glyphicon-link text-gray" title="Website"></span>
+                                    <a href="{{$json_config->$coinname->website}}" target="_blank">Website</a>
+                                </li>
+                            @endif
+                            @if(isset($json_config->$coinname->website2))
+                                <li>
+                                    <span class="glyphicon glyphicon-link text-gray" title="Website"></span>
+                                    <a href="{{$json_config->$coinname->website2}}" target="_blank">Website 2</a>
+                                </li>
+                            @endif
+                            @if(isset($json_config->$coinname->explorer))
+                                <li>
+                                    <span class="glyphicon glyphicon-search text-gray" title="Explorer"></span>
+                                    <a href="{{$json_config->$coinname->explorer}}" target="_blank">Explorer</a>
+                                </li>
+                            @endif
+                            @if(isset($json_config->$coinname->explorer2))
+                                <li>
+                                    <span class="glyphicon glyphicon-search text-gray" title="Explorer"></span>
+                                    <a href="{{$json_config->$coinname->explorer2}}" target="_blank">Explorer 2</a>
+                                </li>
+                            @endif
+                            @if(isset($json_config->$coinname->message_board))
+                                <li>
+                                    <span class="glyphicon glyphicon-list text-gray" title="Message Board"></span>
+                                    <a href="{{$json_config->$coinname->message_board}}" target="_blank">Message Board</a>
+                                </li>
+                            @endif
+                            @if(isset($json_config->$coinname->message_board2))
+                                <li>
+                                    <span class="glyphicon glyphicon-list text-gray" title="Message Board"></span>
+                                    <a href="{{$json_config->$coinname->message_board2}}" target="_blank">Message Board 2</a>
+                                </li>
+                            @endif
+                            @if(isset($json_config->$coinname->rank))
+                                <li>
+                                    <span class="glyphicon glyphicon glyphicon-star text-gray" title="Rank"></span>
+                                    <small><span class="label label-success"> {{$json_config->$coinname->rank}}</span></small>
+                                </li>
+                            @endif
+                        </ul>
                     </div>
                     <div class="col-xs-8 col-sm-8">
                         <div class="coin-summary-item col-xs-6  col-md-3">

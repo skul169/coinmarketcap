@@ -1,0 +1,19 @@
+{
+  "bitcoin" : {
+    "website": "https://bitcoin.org/",
+    "website2": "https://www.bitcoin.com/",
+    "explorer": "http://blockchain.info/",
+    "explorer2": "https://blockexplorer.com/",
+    "message_board": "https://bitcointalk.org/",
+    "message_board2": "https://forum.bitcoin.com/",
+    "rank": "Rank 1"
+  },
+  "ethereum" : {
+    "website": "https://www.ethereum.org/",
+    "explorer": "https://live.ether.camp/",
+    "explorer2": "https://etherscan.io/",
+    "message_board": "https://forum.ethereum.org/",
+    "message_board2": "https://bitcointalk.org/index.php?topic=428589.0",
+    "rank": "Rank 2"
+  }
+}

@@ -18,6 +18,8 @@
 |
 */
 
+define('DOCROOT', __DIR__);
+
 require __DIR__.'/../bootstrap/autoload.php';
 
 /*
