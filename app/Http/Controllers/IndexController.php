@@ -75,7 +75,14 @@ class IndexController extends \Illuminate\Routing\Controller {
         $global->total_market_cap_usd = 0;
         $global->total_24h_volume_usd = 0;
         $index_name = '24h_volume_usd';
-        foreach ($list_all as $coin) {
+        foreach ($list_all as $key => $coin) {
+            if (\Request::route()->getName() == 'topdown' && $coin->percent_change_24h > -1) {
+                unset($list_all[$key]);
+                continue;
+            } elseif (\Request::route()->getName() == 'topup' && $coin->percent_change_24h < 1) {
+                unset($list_all[$key]);
+                continue;
+            }
             $global->total_market_cap_usd += $coin->market_cap_usd;
             $global->total_24h_volume_usd += $coin->$index_name;
         }
