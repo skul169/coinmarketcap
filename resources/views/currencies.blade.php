@@ -257,10 +257,20 @@
                         <ul class="nav nav-tabs text-left" role="tablist">
                             <li class="active"><a href="#charts" role="tab" data-toggle="tab"> <span
                                             class="glyphicon glyphicon-stats text-gray"></span> Charts </a></li>
-                            <li><a href="#markets" role="tab" data-toggle="tab"><span
-                                            class="glyphicon glyphicon-import text-gray"></span> Buy </a></li>
-                            <li><a href="#social" role="tab" data-toggle="tab"><span
-                                            class="glyphicon glyphicon-export text-gray"></span> Sell </a></li>
+                            @if(isset($json_config->$coinname->buy))
+                                <li>
+                                    <a href="{{$json_config->$coinname->buy}}">
+                                        <span class="glyphicon glyphicon-import text-gray"></span> Buy
+                                    </a>
+                                </li>
+                            @endif
+                            @if(isset($json_config->$coinname->sell))
+                                <li>
+                                    <a href="{{$json_config->$coinname->sell}}">
+                                        <span class="glyphicon glyphicon-export text-gray"></span> Sell
+                                    </a>
+                                </li>
+                            @endif
                         </ul>
                     </div>
                     <div class="col-xs-12 tab-content">

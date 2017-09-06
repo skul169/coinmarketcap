@@ -6,7 +6,9 @@
     "explorer2": "https://blockexplorer.com/",
     "message_board": "https://bitcointalk.org/",
     "message_board2": "https://forum.bitcoin.com/",
-    "rank": "Rank 1"
+    "rank": "Rank 1",
+    "buy" : "http://b-eth.com/eth/buy",
+    "sell" : "http://b-eth.com/eth/sell"
   },
   "ethereum" : {
     "website": "https://www.ethereum.org/",
@@ -14,6 +16,8 @@
     "explorer2": "https://etherscan.io/",
     "message_board": "https://forum.ethereum.org/",
     "message_board2": "https://bitcointalk.org/index.php?topic=428589.0",
-    "rank": "Rank 2"
+    "rank": "Rank 2",
+    "buy" : "http://b-eth.com/eth/buy",
+    "sell" : "http://b-eth.com/eth/sell"
   }
 }
