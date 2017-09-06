@@ -17,8 +17,19 @@
 <body>
     @yield('main-content')
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    @yield('inpage-script')
+
     <script src="/static/compressed/base.min.js?03648796"></script>
+    <script src="{{ asset('plugins/jQuery/jQuery-2.2.0.min.js') }}"></script>
+    <script src="{{ asset('temp_coinmk/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('temp_coinmk/StockBoard.js') }}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+    @yield('inpage-script')
+    <script type="text/javascript">
+        function formatNumber(num) {
+            //return number = num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+            return number = num.toFixed(3).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+        }
+    </script>
     {{--<script src="https://stock.local/static/compressed/currencies_main.min.js?7ec58358"></script>--}}
 </body>
 </html>

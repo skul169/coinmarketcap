@@ -4,6 +4,53 @@
 Home
 @endsection
 
+@section('inpage-script')
+    <script>
+        var url = 'http://socket.coincap.io';
+        var socket = io(url, {
+            'secure': true,
+            'reconnect': true,
+            'reconnection delay': 5000,
+            'max reconnection attempts': 10
+        });
+
+        socket.on('trades', function (tradeMsg) {
+            if ($("#id-"+ tradeMsg.message.coin).length) {
+                $("#id-"+ tradeMsg.message.coin +" > .market-cap").html("$" + formatNumber(tradeMsg.message.msg.mktcap));
+                $("#id-"+ tradeMsg.message.coin +" .price").html("$" + formatNumber(tradeMsg.message.msg.price));
+                $("#id-"+ tradeMsg.message.coin +" .supply").html(formatNumber(tradeMsg.message.msg.supply) + " " + tradeMsg.message.msg.short);
+                $("#id-"+ tradeMsg.message.coin +" .volume").html("$" + formatNumber(tradeMsg.message.msg.usdVolume));
+                $("#id-"+ tradeMsg.message.coin +" .percent-24h").html(tradeMsg.message.msg.cap24hrChange + '%');
+                if (tradeMsg.message.msg.cap24hrChange >= 0) {
+                    $("#id-"+ tradeMsg.message.coin +" .percent-24h").removeClass('negative_change').addClass('positive_change');
+                } else {
+                    $("#id-"+ tradeMsg.message.coin +" .percent-24h").removeClass('positive_change').addClass('negative_change');
+                }
+
+                //random from 0 to 9
+                var random = Math.floor(Math.random() * 10);
+                var background_color = [
+                    "#c2d8fc",
+                    "#d7efea",
+                    "#9baaa7",
+                    "#c5ccc7",
+                    "#cacebb",
+                    "#e2e0d9",
+                    "#e2dba6",
+                    "#86e2d2",
+                    "#95d0e2",
+                    "#d7efea"
+                ];
+
+                $("#id-"+ tradeMsg.message.coin).attr('style', 'background: '+ background_color[random] +';');
+                setTimeout(function(){
+                    $("#id-"+ tradeMsg.message.coin).attr('style', 'background: none;');
+                }, 500);
+            }
+        });
+    </script>
+@endsection
+
 
 @section('main-content')
     <div id="top-nav-outer-container" role="navigation">
@@ -159,7 +206,7 @@ Home
                                         <a href="/currencies/{{ $coin->id }}/" class="price">${{number_format($coin->price_usd,5, '.', ',')}}</a>
                                     </td>
                                     <td class="no-wrap text-right">
-                                        <a target="_blank">
+                                        <a target="_blank" class="supply">
                                             {{number_format($coin->total_supply,0, '.', ',')}} {{ $coin->symbol }}
                                         </a>
                                     </td>
