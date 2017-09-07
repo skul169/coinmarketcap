@@ -5,7 +5,7 @@
 @endsection
 
 @section('inpage-script')
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    {{--<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>--}}
     <script src="//code.highcharts.com/highcharts.js"></script>
     <script src="//code.highcharts.com/modules/exporting.js"></script>
     <script>
@@ -104,10 +104,10 @@
                 <div class="col-xs-12 col-sm-7">
                     <div id="global-stats-values" class="small">
                         <ul class="list-inline stat-counters">
-                            Market Cap: <strong><a href="/">${{number_format($global->total_market_cap_usd)}}</a></strong>
+                            Market Cap: <strong><a href="/" id="total_market_cap_header_id">${{number_format($global->total_market_cap_usd)}}</a></strong>
                             <li>
-                                / 24h Vol: <strong><a href="/">${{number_format($global->total_24h_volume_usd)}}</a></strong>
-                                / BTC Dominance: <strong><a href="/">{{$global->bitcoin_percentage_of_market_cap}}%</a></strong>
+                                / 24h Vol: <strong><a href="/" id="total_24h_volume_usd_header">${{number_format($global->total_24h_volume_usd)}}</a></strong>
+                                / BTC Dominance: <strong><a href="/" id="btc_dominance_header">{{$global->bitcoin_percentage_of_market_cap}}%</a></strong>
                             </li>
                         </ul>
                     </div>
