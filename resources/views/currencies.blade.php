@@ -145,12 +145,12 @@
                                 </ul>
                             </li>
                         </ul>
-                        <form action="/currencies/search/" class="navbar-form navbar-right" role="search">
+                        <form action="/" class="navbar-form navbar-right" role="search">
                             <div class="form-group">
                                 <span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input type="text" id="quick-search-box" class="form-control js-quick-search tt-input" placeholder="Search Currencies" name="q" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-currencies"></div></span></span>
                                 <button class="btn btn-primary hidden-sm hidden-md hidden-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                             </div>
-                            <button class="btn btn-primary hidden-xs" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            <button class="btn btn-primary hidden-xs" type="button"><i class="glyphicon glyphicon-search"></i></button>
                         </form>
                         <div class="bottom-margin-1x hidden-sm hidden-md hidden-lg"></div>
                     </div>

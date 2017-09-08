@@ -104,14 +104,14 @@ Home
                                 <a href="/topdownlist">TopDown</a>
                             </li>
                         </ul>
-                        <form action="/currencies/search/" class="navbar-form navbar-right" role="search">
+                        <form action="/" class="navbar-form navbar-right" role="search">
                             <div class="form-group">
                                 <input type="text" id="quick-search-box" class="form-control js-quick-search"
                                        placeholder="Search Currencies" name="q">
                                 <button class="btn btn-primary hidden-sm hidden-md hidden-lg" type="submit"><i
                                             class="glyphicon glyphicon-search"></i></button>
                             </div>
-                            <button class="btn btn-primary hidden-xs" type="submit"><i
+                            <button class="btn btn-primary hidden-xs" type="button"><i
                                         class="glyphicon glyphicon-search"></i></button>
                         </form>
                         <div class="bottom-margin-1x hidden-sm hidden-md hidden-lg"></div>
